@@ -137,6 +137,20 @@ namespace System.Security.Cryptography.IntegrationTests
                         Key = GenerateKey(192)
                     }
                 );
+#if NET462 || NET47|| NET471 || NET472 || NET48
+            yield return new TestCaseData(
+                    new TripleDESCng()
+                    {
+                        Mode = CipherMode.ECB,
+                        Key = GenerateKey(192)
+                    },
+                    new TripleDESCng()
+                    {
+                        Mode = CipherMode.ECB,
+                        Key = GenerateKey(192)
+                    }
+                );
+#endif
         }
 
         private static byte[] GenerateKey(int bits)
