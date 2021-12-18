@@ -40,7 +40,12 @@ namespace System.Security.Cryptography
         {
             byte[] ciphertextBytes = hash.ComputeHash(plaintextBytes);
 
-            return BitConverter.ToString(ciphertextBytes).Replace("-", string.Empty);
+#if NETSTANDARD2_1_OR_GREATER
+            var hex = BitConverter.ToString(ciphertextBytes).Replace("-", string.Empty, default);
+#else
+            var hex = BitConverter.ToString(ciphertextBytes).Replace("-", string.Empty);
+#endif
+            return hex;
         }
     }
 }
