@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System.Security.Cryptography;
 
-namespace MoreNet.Cryptography.Extensions
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Extensions for <see cref="IServiceCollection"/>.
