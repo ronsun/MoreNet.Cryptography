@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using MoreNet.Cryptography;
+using System.IO;
 using System.Text;
 
 namespace System.Security.Cryptography
@@ -16,7 +17,7 @@ namespace System.Security.Cryptography
         /// <returns>Ciphertext. </returns>
         public static string EncryptToBase64(this SymmetricAlgorithm symmetric, string plaintext)
         {
-            return EncryptToBase64(symmetric, plaintext, Encoding.UTF8);
+            return EncryptToBase64(symmetric, plaintext, DefaultValues.Encoding);
         }
 
         /// <summary>
@@ -68,7 +69,7 @@ namespace System.Security.Cryptography
         /// <returns>Plaintext. </returns>
         public static string DecryptFromBase64(this SymmetricAlgorithm symmetric, string ciphertext)
         {
-            return DecryptFromBase64(symmetric, ciphertext, Encoding.UTF8);
+            return DecryptFromBase64(symmetric, ciphertext, DefaultValues.Encoding);
         }
 
         /// <summary>

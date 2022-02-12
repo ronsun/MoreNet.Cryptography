@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using MoreNet.Cryptography;
+using System.Text;
 
 namespace System.Security.Cryptography
 {
@@ -15,7 +16,7 @@ namespace System.Security.Cryptography
         /// <returns>Hashed string.</returns>
         public static string ComputeHashToHex(this HashAlgorithm hash, string plaintext)
         {
-            return ComputeHashToHex(hash, plaintext, Encoding.UTF8);
+            return ComputeHashToHex(hash, plaintext, DefaultValues.Encoding);
         }
 
         /// <summary>
