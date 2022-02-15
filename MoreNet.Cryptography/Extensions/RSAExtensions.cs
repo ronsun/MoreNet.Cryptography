@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using MoreNet.Cryptography;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace System.Security.Cryptography
 {
@@ -8,7 +10,7 @@ namespace System.Security.Cryptography
     /// </summary>
     public static class RSAExtensions
     {
-        private static Dictionary<RSAEncryptionPadding, int> _offsetDictionary = new Dictionary<RSAEncryptionPadding, int>
+        private static readonly Dictionary<RSAEncryptionPadding, int> _offsetDictionary = new Dictionary<RSAEncryptionPadding, int>
         {
             [RSAEncryptionPadding.Pkcs1] = 11,
             [RSAEncryptionPadding.OaepSHA1] = 42,
@@ -16,6 +18,20 @@ namespace System.Security.Cryptography
             [RSAEncryptionPadding.OaepSHA384] = 98,
             [RSAEncryptionPadding.OaepSHA512] = 130,
         };
+
+        /// <summary>
+        /// Encrypt. If plaintext longer than key size, will slice and encrypt all of chunks.
+        /// </summary>
+        /// <param name="rsa"><see cref="RSA"/>.</param>
+        /// <param name="plaintext">Plaintext in UTF-8.</param>
+        /// <param name="padding"><see cref="RSAEncryptionPadding"/>.</param>
+        /// <returns>Ciphertext in base64 string.</returns>
+        public static string EncryptChunksToBase64(this RSA rsa, string plaintext, RSAEncryptionPadding padding)
+        {
+            var plaintextBytes = DefaultValues.Encoding.GetBytes(plaintext);
+            var ciphertextBytes = EncryptChunks(rsa, plaintextBytes, padding);
+            return Convert.ToBase64String(ciphertextBytes);
+        }
 
         /// <summary>
         /// Encrypt. If plaintext longer than key size, will slice and encrypt all of chunks.
@@ -37,6 +53,20 @@ namespace System.Security.Cryptography
         /// Decrypt. If plaintext longer than key size, will slice and decrypt all of chunks.
         /// </summary>
         /// <param name="rsa"><see cref="RSA"/>.</param>
+        /// <param name="ciphertext">Ciphertext in base64 string.</param>
+        /// <param name="padding"><see cref="RSAEncryptionPadding"/>.</param>
+        /// <returns>Plaintext in UFT-8.</returns>
+        public static string DecryptChunksFromBase64(this RSA rsa, string ciphertext, RSAEncryptionPadding padding)
+        {
+            var ciphertextBytes = Convert.FromBase64String(ciphertext);
+            var plaintextBytes = DecryptChunks(rsa, ciphertextBytes, padding);
+            return DefaultValues.Encoding.GetString(plaintextBytes);
+        }
+
+        /// <summary>
+        /// Decrypt. If plaintext longer than key size, will slice and decrypt all of chunks.
+        /// </summary>
+        /// <param name="rsa"><see cref="RSA"/>.</param>
         /// <param name="ciphertextBytes">Ciphertext bytes.</param>
         /// <param name="padding"><see cref="RSAEncryptionPadding"/>.</param>
         /// <returns>Plaintext in bytes.</returns>
@@ -47,6 +77,66 @@ namespace System.Security.Cryptography
                 .Select(chunk => rsa.Decrypt(chunk, padding))
                 .SelectMany(r => r)
                 .ToArray();
+        }
+
+        /// <summary>
+        /// Sign data to base64 string.
+        /// </summary>
+        /// <param name="rsa"><see cref="RSA"/>.</param>
+        /// <param name="data">Plaintext in UTF-8.</param>
+        /// <returns>Ciphertext in base64 string.</returns>
+        public static string SignDataToBase64(this RSA rsa, string data)
+        {
+            return SignDataToBase64(rsa, data, DefaultValues.Encoding, DefaultValues.HashAlgorithmName, DefaultValues.RSASignaturePadding);
+        }
+
+        /// <summary>
+        /// Sign data to base64 string.
+        /// </summary>
+        /// <param name="rsa"><see cref="RSA"/>.</param>
+        /// <param name="data">Plaintext in UTF-8.</param>
+        /// <param name="encoding"><see cref="Encoding"/>.</param>
+        /// <param name="hashAlgoName"><see cref="HashAlgorithmName"/>.</param>
+        /// <param name="padding"><see cref="RSASignaturePadding"/>.</param>
+        /// <returns>Signature in base64 string.</returns>
+        public static string SignDataToBase64(this RSA rsa, string data, Encoding encoding, HashAlgorithmName hashAlgoName, RSASignaturePadding padding)
+        {
+            var dataBytes = encoding.GetBytes(data);
+            var signatureBytes = rsa.SignData(dataBytes, hashAlgoName, padding);
+            return Convert.ToBase64String(signatureBytes);
+        }
+
+        /// <summary>
+        /// Verify data from base64 string.
+        /// </summary>
+        /// <param name="rsa"><see cref="RSA"/>.</param>
+        /// <param name="data">Plaintext in UTF-8.</param>
+        /// <param name="signature">Signature in base64 string.</param>
+        /// <returns>Is <paramref name="data"/> valid.</returns>
+        /// <remarks>
+        /// <see cref="HashAlgorithmName"/> default to <see cref="HashAlgorithmName.SHA1"/>.
+        /// <see cref="RSASignaturePadding"/> default to <see cref="RSASignaturePadding.Pkcs1"/>.
+        /// </remarks>
+        public static bool VerifyDataFromBase64(this RSA rsa, string data, string signature)
+        {
+            return VerifyDataFromBase64(rsa, data, DefaultValues.Encoding, signature, DefaultValues.HashAlgorithmName, DefaultValues.RSASignaturePadding);
+        }
+
+        /// <summary>
+        /// Verify data from base64 string.
+        /// </summary>
+        /// <param name="rsa"><see cref="RSA"/>.</param>
+        /// <param name="data">Plaintext.</param>
+        /// <param name="dataEncoding">Encoding of plaintext.</param>
+        /// <param name="signature">Signature in base64 string.</param>
+        /// <param name="hashAlgoName"><see cref="HashAlgorithmName"/>.</param>
+        /// <param name="padding"><see cref="RSASignaturePadding"/>.</param>
+        /// <returns>Is <paramref name="data"/> valid.</returns>
+        public static bool VerifyDataFromBase64(this RSA rsa, string data, Encoding dataEncoding, string signature, HashAlgorithmName hashAlgoName, RSASignaturePadding padding)
+        {
+            var dataBytes = dataEncoding.GetBytes(data);
+            var signatureBytes = Convert.FromBase64String(signature);
+            return rsa.VerifyData(dataBytes, signatureBytes, hashAlgoName, padding);
         }
 
         private static IEnumerable<byte[]> Chunk(byte[] source, int size)

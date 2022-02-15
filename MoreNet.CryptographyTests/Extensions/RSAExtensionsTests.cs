@@ -26,6 +26,27 @@ namespace System.Security.Cryptography.IntegrationTests
 
         [Test()]
         [TestCaseSource(nameof(EncryptDecryptTestCaseSource_EncryptAndDecryptCorrectly))]
+        public void EncryptDecryptTest_Base64_EncryptAndDecryptCorrectly(
+            int stubPalintextSizeInByte,
+            RSAEncryptionPadding stubPadding,
+            string stubPublicKey,
+            string stubPrivateKey)
+        {
+            // arrange
+            var stubPlaintext = "".PadLeft(stubPalintextSizeInByte, 'a');
+            var stubEncryptRSA = CreateRSAWithPublicKey(stubPublicKey);
+            var stubDecryptRSA = CreateRSAWithPrivateKey(stubPrivateKey);
+
+            // act
+            var ciphertext = stubEncryptRSA.EncryptChunksToBase64(stubPlaintext, stubPadding);
+            var actualPlaintextBytes = stubDecryptRSA.DecryptChunksFromBase64(ciphertext, stubPadding);
+
+            // assert
+            actualPlaintextBytes.Should().BeEquivalentTo(stubPlaintext);
+        }
+
+        [Test()]
+        [TestCaseSource(nameof(EncryptDecryptTestCaseSource_EncryptAndDecryptCorrectly))]
         public void EncryptDecryptTest_EncryptAndDecryptCorrectly(
             int stubPalintextSizeInByte,
             RSAEncryptionPadding stubPadding,
@@ -34,8 +55,8 @@ namespace System.Security.Cryptography.IntegrationTests
         {
             // arrange
             var stubPlaintextBytes = Enumerable.Range(0, stubPalintextSizeInByte).Select(r => byte.MaxValue).ToArray();
-            var stubEncryptRSA = CreateEncryptRSA(stubPublicKey);
-            var stubDecryptRSA = CreateDecryptRSA(stubPrivateKey);
+            var stubEncryptRSA = CreateRSAWithPublicKey(stubPublicKey);
+            var stubDecryptRSA = CreateRSAWithPrivateKey(stubPrivateKey);
 
             // act
             var ciphertext = stubEncryptRSA.EncryptChunks(stubPlaintextBytes, stubPadding);
@@ -43,6 +64,49 @@ namespace System.Security.Cryptography.IntegrationTests
 
             // assert
             actualPlaintextBytes.Should().BeEquivalentTo(stubPlaintextBytes);
+        }
+
+        [Test()]
+        [TestCase(PublicKey512, PrivateKey512)]
+        [TestCase(PublicKey1024, PrivateKey1024)]
+        [TestCase(PublicKey2048, PrivateKey2048)]
+        public void SignDataVerifySignTest_Base64_SimpleScenario(
+            string stubPublicKey,
+            string stubPrivateKey)
+        {
+            // arrange
+            var stubPlaintext = "a";
+            var stubSignRSA = CreateRSAWithPrivateKey(stubPrivateKey);
+            var stubVerifyRSA = CreateRSAWithPublicKey(stubPublicKey);
+
+            // act
+            var ciphertext = stubSignRSA.SignDataToBase64(stubPlaintext);
+            var actualIsValid = stubVerifyRSA.VerifyDataFromBase64(stubPlaintext, ciphertext);
+
+            // assert
+            actualIsValid.Should().BeTrue();
+        }
+
+        [Test()]
+        [TestCaseSource(nameof(SignDataVerifySignTestCaseSource_VerifyCorrectly))]
+        public void SignDataVerifySignTest_Base64(
+            Encoding stubEncoding,
+            HashAlgorithmName stubHashAlgorithmName,
+            RSASignaturePadding stubPadding,
+            string stubPublicKey,
+            string stubPrivateKey)
+        {
+            // arrange
+            var stubPlaintext = "a";
+            var stubSignRSA = CreateRSAWithPrivateKey(stubPrivateKey);
+            var stubVerifyRSA = CreateRSAWithPublicKey(stubPublicKey);
+
+            // act
+            var ciphertext = stubSignRSA.SignDataToBase64(stubPlaintext, stubEncoding, stubHashAlgorithmName, stubPadding);
+            var actualIsValid = stubVerifyRSA.VerifyDataFromBase64(stubPlaintext, stubEncoding, ciphertext, stubHashAlgorithmName, stubPadding);
+
+            // assert
+            actualIsValid.Should().BeTrue();
         }
 
         private static IEnumerable EncryptDecryptTestCaseSource_EncryptAndDecryptCorrectly()
@@ -68,14 +132,29 @@ namespace System.Security.Cryptography.IntegrationTests
             yield return new TestCaseData(256 - 130 + 1, RSAEncryptionPadding.OaepSHA512, PublicKey2048, PrivateKey2048);
         }
 
-        private RSA CreateEncryptRSA(string publicKey)
+        private static IEnumerable SignDataVerifySignTestCaseSource_VerifyCorrectly()
+        {
+            var encodings = new[] { Encoding.UTF8, Encoding.Unicode };
+            var hashNames = new[] { HashAlgorithmName.SHA1, HashAlgorithmName.SHA256 };
+            var rsaPaddings = new[] { RSASignaturePadding.Pkcs1 };
+            foreach (var encoding in encodings)
+                foreach (var hashName in hashNames)
+                    foreach (var rsaPadding in rsaPaddings)
+                    {
+                        yield return new TestCaseData(encoding, hashName, rsaPadding, PublicKey512, PrivateKey512);
+                        yield return new TestCaseData(encoding, hashName, rsaPadding, PublicKey1024, PrivateKey1024);
+                        yield return new TestCaseData(encoding, hashName, rsaPadding, PublicKey2048, PrivateKey2048);
+                    }
+        }
+
+        private RSA CreateRSAWithPublicKey(string publicKey)
         {
             var rsa = RSA.Create();
             rsa.ImportSubjectPublicKeyInfo(Convert.FromBase64String(publicKey), out int _);
             return rsa;
         }
 
-        private RSA CreateDecryptRSA(string privateKey)
+        private RSA CreateRSAWithPrivateKey(string privateKey)
         {
             var rsa = RSA.Create();
             // TODO: I don't know why I should use ImportPkcs8PrivateKey for 2048 key to avoid exception.
