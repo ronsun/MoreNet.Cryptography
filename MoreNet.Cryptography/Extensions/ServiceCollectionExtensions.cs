@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MoreNet.Cryptography;
 using System.Security.Cryptography;
 
 namespace Microsoft.Extensions.DependencyInjection
@@ -16,6 +16,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddMoreNetCryptography(this IServiceCollection service)
         {
             service.AddScoped<RandomNumberGenerator, RNGCryptoServiceProvider>();
+            service.AddScoped<ICryptoAdapter, CryptoAdapter>();
 
             return service;
         }
