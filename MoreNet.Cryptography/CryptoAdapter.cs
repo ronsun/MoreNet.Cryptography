@@ -99,9 +99,60 @@ namespace MoreNet.Cryptography
             return algo.Decrypt(ciphertextBytes);
         }
 
-        private SymmetricAlgorithm CreateAlgorithm(SymmetricName hashName)
+        /// <inheritdoc/>
+        public string RSAEncryptChunksToBase64(string plaintext, RSAEncryptionPadding padding)
         {
-            return (SymmetricAlgorithm)CryptoConfig.CreateFromName(hashName.Name);
+            var algo = CreateRSA();
+            return algo.EncryptChunksToBase64(plaintext, padding);
+        }
+
+        /// <inheritdoc/>
+        public byte[] RSAEncryptChunks(byte[] plaintextBytes, RSAEncryptionPadding padding)
+        {
+            var algo = CreateRSA();
+            return algo.EncryptChunks(plaintextBytes, padding);
+        }
+
+        /// <inheritdoc/>
+        public string RSADecryptChunksFromBase64(string ciphertext, RSAEncryptionPadding padding)
+        {
+            var algo = CreateRSA();
+            return algo.DecryptChunksFromBase64(ciphertext, padding);
+        }
+
+        /// <inheritdoc/>
+        public byte[] RSADecryptChunks(byte[] ciphertextBytes, RSAEncryptionPadding padding)
+        {
+            var algo = CreateRSA();
+            return algo.DecryptChunks(ciphertextBytes, padding);
+        }
+
+        /// <inheritdoc/>
+        public string RSASignDataToBase64(string data)
+        {
+            var algo = CreateRSA();
+            return algo.SignDataToBase64(data);
+        }
+
+        /// <inheritdoc/>
+        public string RSASignDataToBase64(string data, Encoding encoding, HashAlgorithmName hashAlgoName, RSASignaturePadding padding)
+        {
+            var algo = CreateRSA();
+            return algo.SignDataToBase64(data, encoding, hashAlgoName, padding);
+        }
+
+        /// <inheritdoc/>
+        public bool RSAVerifyDataFromBase64(string data, string signature)
+        {
+            var algo = CreateRSA();
+            return algo.VerifyDataFromBase64(data, signature);
+        }
+
+        /// <inheritdoc/>
+        public bool RSAVerifyDataFromBase64(string data, Encoding dataEncoding, string signature, HashAlgorithmName hashAlgoName, RSASignaturePadding padding)
+        {
+            var algo = CreateRSA();
+            return algo.VerifyDataFromBase64(data, dataEncoding, signature, hashAlgoName, padding);
         }
 
         private HashAlgorithm CreateAlgorithm(HashName hashName)
@@ -114,6 +165,16 @@ namespace MoreNet.Cryptography
             var algo = (KeyedHashAlgorithm)CryptoConfig.CreateFromName(hashName.Name);
             algo.Key = keyBytes;
             return algo;
+        }
+
+        private SymmetricAlgorithm CreateAlgorithm(SymmetricName symmetricName)
+        {
+            return (SymmetricAlgorithm)CryptoConfig.CreateFromName(symmetricName.Name);
+        }
+
+        private RSA CreateRSA()
+        {
+            return (RSA)CryptoConfig.CreateFromName(AsymmetricName.RSA.Name);
         }
     }
 }

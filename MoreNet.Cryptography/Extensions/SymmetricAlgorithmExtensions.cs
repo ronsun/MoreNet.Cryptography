@@ -29,6 +29,11 @@ namespace System.Security.Cryptography
         /// <returns>Ciphertext. </returns>
         public static string EncryptToBase64(this SymmetricAlgorithm symmetric, string plaintext, Encoding plaintextEncoding)
         {
+            if (plaintextEncoding == null)
+            {
+                throw new ArgumentNullException(nameof(plaintextEncoding));
+            }
+
             return EncryptToBase64(symmetric, plaintextEncoding.GetBytes(plaintext));
         }
 
@@ -52,6 +57,16 @@ namespace System.Security.Cryptography
         /// <returns>Ciphertext bytes. </returns>
         public static byte[] Encrypt(this SymmetricAlgorithm symmetric, byte[] plaintextBytes)
         {
+            if (symmetric == null)
+            {
+                throw new ArgumentNullException(nameof(symmetric));
+            }
+
+            if (plaintextBytes == null)
+            {
+                throw new ArgumentNullException(nameof(plaintextBytes));
+            }
+
             MemoryStream ms = new MemoryStream();
             using (CryptoStream cs = new CryptoStream(ms, symmetric.CreateEncryptor(), CryptoStreamMode.Write))
             {
@@ -81,6 +96,11 @@ namespace System.Security.Cryptography
         /// <returns>Plaintext. </returns>
         public static string DecryptFromBase64(this SymmetricAlgorithm symmetric, string ciphertext, Encoding plaintextEncoding)
         {
+            if (plaintextEncoding == null)
+            {
+                throw new ArgumentNullException(nameof(plaintextEncoding));
+            }
+
             var ciphertextBytes = Convert.FromBase64String(ciphertext);
             var plaintextBytes = Decrypt(symmetric, ciphertextBytes);
             return plaintextEncoding.GetString(plaintextBytes);
@@ -95,6 +115,11 @@ namespace System.Security.Cryptography
         /// <returns>Plaintext. </returns>
         public static string Decrypt(this SymmetricAlgorithm symmetric, byte[] ciphertextBytes, Encoding plaintextEncoding)
         {
+            if (plaintextEncoding == null)
+            {
+                throw new ArgumentNullException(nameof(plaintextEncoding));
+            }
+
             var plaintextBytes = Decrypt(symmetric, ciphertextBytes);
             return plaintextEncoding.GetString(plaintextBytes);
         }
@@ -107,6 +132,16 @@ namespace System.Security.Cryptography
         /// <returns>Plaintext. </returns>
         public static byte[] Decrypt(this SymmetricAlgorithm symmetric, byte[] ciphertextBytes)
         {
+            if (symmetric == null)
+            {
+                throw new ArgumentNullException(nameof(symmetric));
+            }
+
+            if (ciphertextBytes == null)
+            {
+                throw new ArgumentNullException(nameof(ciphertextBytes));
+            }
+
             MemoryStream ms = new MemoryStream();
             using (CryptoStream cs = new CryptoStream(ms, symmetric.CreateDecryptor(), CryptoStreamMode.Write))
             {

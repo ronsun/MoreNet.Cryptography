@@ -1,4 +1,5 @@
 ﻿using MoreNet.Cryptography.Algorithm;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace MoreNet.Cryptography
@@ -117,5 +118,77 @@ namespace MoreNet.Cryptography
         /// <param name="ciphertextBytes">Ciphertext in byte array.</param>
         /// <returns>Plaintext.</returns>
         byte[] Decrypt(SymmetricName symmetricName, byte[] ciphertextBytes);
+
+        /// <summary>
+        /// Encrypt. If plaintext longer than key size, will slice and encrypt all of chunks.
+        /// </summary>
+        /// <param name="plaintext">Plaintext in UTF-8.</param>
+        /// <param name="padding"><see cref="RSAEncryptionPadding"/>.</param>
+        /// <returns>Ciphertext in base64 string.</returns>
+        string RSAEncryptChunksToBase64(string plaintext, RSAEncryptionPadding padding);
+
+        /// <summary>
+        /// Encrypt. If plaintext longer than key size, will slice and encrypt all of chunks.
+        /// </summary>
+        /// <param name="plaintextBytes">Plaintext bytes.</param>
+        /// <param name="padding"><see cref="RSAEncryptionPadding"/>.</param>
+        /// <returns>Ciphertext in bytes.</returns>
+        byte[] RSAEncryptChunks(byte[] plaintextBytes, RSAEncryptionPadding padding);
+
+        /// <summary>
+        /// Decrypt. If plaintext longer than key size, will slice and decrypt all of chunks.
+        /// </summary>
+        /// <param name="ciphertext">Ciphertext in base64 string.</param>
+        /// <param name="padding"><see cref="RSAEncryptionPadding"/>.</param>
+        /// <returns>Plaintext in UFT-8.</returns>
+        string RSADecryptChunksFromBase64(string ciphertext, RSAEncryptionPadding padding);
+
+        /// <summary>
+        /// Decrypt. If plaintext longer than key size, will slice and decrypt all of chunks.
+        /// </summary>
+        /// <param name="ciphertextBytes">Ciphertext bytes.</param>
+        /// <param name="padding"><see cref="RSAEncryptionPadding"/>.</param>
+        /// <returns>Plaintext in bytes.</returns>
+        byte[] RSADecryptChunks(byte[] ciphertextBytes, RSAEncryptionPadding padding);
+
+        /// <summary>
+        /// Sign data to base64 string.
+        /// </summary>
+        /// <param name="data">Plaintext in UTF-8.</param>
+        /// <returns>Ciphertext in base64 string.</returns>
+        string RSASignDataToBase64(string data);
+
+        /// <summary>
+        /// Sign data to base64 string.
+        /// </summary>
+        /// <param name="data">Plaintext in UTF-8.</param>
+        /// <param name="encoding"><see cref="Encoding"/>.</param>
+        /// <param name="hashAlgoName"><see cref="HashAlgorithmName"/>.</param>
+        /// <param name="padding"><see cref="RSASignaturePadding"/>.</param>
+        /// <returns>Signature in base64 string.</returns>
+        string RSASignDataToBase64(string data, Encoding encoding, HashAlgorithmName hashAlgoName, RSASignaturePadding padding);
+
+        /// <summary>
+        /// Verify data from base64 string.
+        /// </summary>
+        /// <param name="data">Plaintext in UTF-8.</param>
+        /// <param name="signature">Signature in base64 string.</param>
+        /// <returns>Is <paramref name="data"/> valid.</returns>
+        /// <remarks>
+        /// <see cref="HashAlgorithmName"/> default to <see cref="HashAlgorithmName.SHA1"/>.
+        /// <see cref="RSASignaturePadding"/> default to <see cref="RSASignaturePadding.Pkcs1"/>.
+        /// </remarks>
+        bool RSAVerifyDataFromBase64(string data, string signature);
+
+        /// <summary>
+        /// Verify data from base64 string.
+        /// </summary>
+        /// <param name="data">Plaintext.</param>
+        /// <param name="dataEncoding">Encoding of plaintext.</param>
+        /// <param name="signature">Signature in base64 string.</param>
+        /// <param name="hashAlgoName"><see cref="HashAlgorithmName"/>.</param>
+        /// <param name="padding"><see cref="RSASignaturePadding"/>.</param>
+        /// <returns>Is <paramref name="data"/> valid.</returns>
+        bool RSAVerifyDataFromBase64(string data, Encoding dataEncoding, string signature, HashAlgorithmName hashAlgoName, RSASignaturePadding padding);
     }
 }
