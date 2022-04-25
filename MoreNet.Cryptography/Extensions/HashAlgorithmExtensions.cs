@@ -1,4 +1,5 @@
 ﻿using MoreNet.Cryptography;
+using MoreNet.Cryptography.Assertion;
 using System.Text;
 
 namespace System.Security.Cryptography
@@ -28,6 +29,8 @@ namespace System.Security.Cryptography
         /// <returns>Hashed string.</returns>
         public static string ComputeHashToHex(this HashAlgorithm hash, string plaintext, Encoding plaintextEncoding)
         {
+            Argument.ShouldNotEmpty(plaintextEncoding, nameof(plaintextEncoding));
+
             return ComputeHashToHex(hash, plaintextEncoding.GetBytes(plaintext));
         }
 
@@ -39,6 +42,8 @@ namespace System.Security.Cryptography
         /// <returns>Hashed string.</returns>
         public static string ComputeHashToHex(this HashAlgorithm hash, byte[] plaintextBytes)
         {
+            Argument.ShouldNotEmpty(hash, nameof(hash));
+
             byte[] ciphertextBytes = hash.ComputeHash(plaintextBytes);
 
 #if NETSTANDARD2_1_OR_GREATER

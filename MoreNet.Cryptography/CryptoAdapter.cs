@@ -29,7 +29,7 @@ namespace MoreNet.Cryptography
         }
 
         /// <inheritdoc/>
-        public string ComputeKeyedHashToHex(KeyedHashType hashName, string plaintext, string key)
+        public string ComputeKeyedHashToHex(KeyedHashName hashName, string plaintext, string key)
         {
             var keyBytes = DefaultValues.Encoding.GetBytes(key);
             var algo = CreateAlgorithm(hashName, keyBytes);
@@ -37,7 +37,7 @@ namespace MoreNet.Cryptography
         }
 
         /// <inheritdoc/>
-        public string ComputeKeyedHashToHex(KeyedHashType hashName, byte[] plaintextBytes, byte[] keyBytes)
+        public string ComputeKeyedHashToHex(KeyedHashName hashName, byte[] plaintextBytes, byte[] keyBytes)
         {
             var algo = CreateAlgorithm(hashName, keyBytes);
             return algo.ComputeHashToHex(plaintextBytes);
@@ -160,7 +160,7 @@ namespace MoreNet.Cryptography
             return (HashAlgorithm)CryptoConfig.CreateFromName(hashName.Name);
         }
 
-        private KeyedHashAlgorithm CreateAlgorithm(KeyedHashType hashName, byte[] keyBytes)
+        private KeyedHashAlgorithm CreateAlgorithm(KeyedHashName hashName, byte[] keyBytes)
         {
             var algo = (KeyedHashAlgorithm)CryptoConfig.CreateFromName(hashName.Name);
             algo.Key = keyBytes;

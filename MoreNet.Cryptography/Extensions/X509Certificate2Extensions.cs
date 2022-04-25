@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using MoreNet.Cryptography.Assertion;
+using System.IO;
 using System.Reflection;
 
 namespace System.Security.Cryptography.X509Certificates
@@ -22,6 +23,9 @@ namespace System.Security.Cryptography.X509Certificates
             string fullName,
             string password)
         {
+            Argument.ShouldNotEmpty(cert, nameof(cert));
+            Argument.ShouldNotEmpty(assembly, nameof(assembly));
+
             return Import(cert, assembly, fullName, password, default);
         }
 
@@ -39,6 +43,9 @@ namespace System.Security.Cryptography.X509Certificates
             string fullName,
             X509KeyStorageFlags keyStorageFlags)
         {
+            Argument.ShouldNotEmpty(cert, nameof(cert));
+            Argument.ShouldNotEmpty(assembly, nameof(assembly));
+
             return Import(cert, assembly, fullName, default, keyStorageFlags);
         }
 

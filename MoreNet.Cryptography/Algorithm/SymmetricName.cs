@@ -2,8 +2,16 @@
 
 namespace MoreNet.Cryptography.Algorithm
 {
+    /// <summary>
+    /// Name of symmertric algorithm.
+    /// </summary>
     public struct SymmetricName : IEquatable<SymmetricName>
     {
+        private SymmetricName(string name)
+        {
+            Name = name;
+        }
+
         /// <summary>
         /// Gets a <see cref="SymmetricName" /> representing "Aes".
         /// </summary>
@@ -38,28 +46,28 @@ namespace MoreNet.Cryptography.Algorithm
         public string Name { get; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SymmetricName"/> struct.
+        /// Equal operator.
         /// </summary>
-        /// <param name="name">The custom hash algorithm name.</param>
-        public SymmetricName(string name)
-        {
-            Name = name;
-        }
-
-        /// <inheritdoc/>
-        public override string ToString() => Name ?? string.Empty;
-
-        /// <inheritdoc/>
-        public override bool Equals(object obj) => obj is SymmetricName && Equals((SymmetricName)obj);
-
-        /// <inheritdoc/>
-        public bool Equals(SymmetricName other) => Name == other.Name;
-
-        /// <inheritdoc/>
-        public override int GetHashCode() => Name?.GetHashCode() ?? 0;
-
+        /// <param name="left">Left.</param>
+        /// <param name="right">Right.</param>
+        /// <returns>Is equal.</returns>
         public static bool operator ==(SymmetricName left, SymmetricName right) => left.Equals(right);
 
+        /// <summary>
+        /// Not equal operator.
+        /// </summary>
+        /// <param name="left">Left.</param>
+        /// <param name="right">Right.</param>
+        /// <returns>Is not equal.</returns>
         public static bool operator !=(SymmetricName left, SymmetricName right) => !(left == right);
+
+        /// <inheritdoc/>
+        public override bool Equals(object obj) => obj is SymmetricName other && Equals(other);
+
+        /// <inheritdoc/>
+        public override int GetHashCode() => HashCode.Combine(this.Name);
+
+        /// <inheritdoc/>
+        public bool Equals(SymmetricName other) => this.Name == other.Name;
     }
 }

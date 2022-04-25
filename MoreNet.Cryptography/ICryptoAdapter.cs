@@ -41,7 +41,7 @@ namespace MoreNet.Cryptography
         /// <param name="plaintext">Plaintext in <see cref="DefaultValues.Encoding"/>.</param>
         /// <param name="key">Key in <see cref="DefaultValues.Encoding"/>.</param>
         /// <returns>Hash in hex.</returns>
-        string ComputeKeyedHashToHex(KeyedHashType hashName, string plaintext, string key);
+        string ComputeKeyedHashToHex(KeyedHashName hashName, string plaintext, string key);
 
         /// <summary>
         /// Compute heyed hash to Hex.
@@ -50,7 +50,7 @@ namespace MoreNet.Cryptography
         /// <param name="plaintextBytes">Plaintext in byte array.</param>
         /// <param name="keyBytes">Key in byte array.</param>
         /// <returns>Hash in hex.</returns>
-        string ComputeKeyedHashToHex(KeyedHashType hashName, byte[] plaintextBytes, byte[] keyBytes);
+        string ComputeKeyedHashToHex(KeyedHashName hashName, byte[] plaintextBytes, byte[] keyBytes);
 
         /// <summary>
         /// Encrypt to base64 string.

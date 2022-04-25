@@ -2,8 +2,16 @@
 
 namespace MoreNet.Cryptography.Algorithm
 {
+    /// <summary>
+    /// Name of asymmetric algorithm.
+    /// </summary>
     public struct AsymmetricName : IEquatable<AsymmetricName>
     {
+        private AsymmetricName(string name)
+        {
+            Name = name;
+        }
+
         /// <summary>
         /// Gets a <see cref="AsymmetricName" /> representing "RSA".
         /// </summary>
@@ -18,28 +26,28 @@ namespace MoreNet.Cryptography.Algorithm
         public string Name { get; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AsymmetricName"/> struct.
+        /// Equal operator.
         /// </summary>
-        /// <param name="name">The custom hash algorithm name.</param>
-        public AsymmetricName(string name)
-        {
-            Name = name;
-        }
-
-        /// <inheritdoc/>
-        public override string ToString() => Name ?? string.Empty;
-
-        /// <inheritdoc/>
-        public override bool Equals(object obj) => obj is AsymmetricName && Equals((AsymmetricName)obj);
-
-        /// <inheritdoc/>
-        public bool Equals(AsymmetricName other) => Name == other.Name;
-
-        /// <inheritdoc/>
-        public override int GetHashCode() => Name?.GetHashCode() ?? 0;
-
+        /// <param name="left">Left.</param>
+        /// <param name="right">Right.</param>
+        /// <returns>Is equal.</returns>
         public static bool operator ==(AsymmetricName left, AsymmetricName right) => left.Equals(right);
 
+        /// <summary>
+        /// Not equal operator.
+        /// </summary>
+        /// <param name="left">Left.</param>
+        /// <param name="right">Right.</param>
+        /// <returns>Is not equal.</returns>
         public static bool operator !=(AsymmetricName left, AsymmetricName right) => !(left == right);
+
+        /// <inheritdoc/>
+        public override bool Equals(object obj) => obj is KeyedHashName other && Equals(other);
+
+        /// <inheritdoc/>
+        public override int GetHashCode() => HashCode.Combine(this.Name);
+
+        /// <inheritdoc/>
+        public bool Equals(AsymmetricName other) => this.Name == other.Name;
     }
 }

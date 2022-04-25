@@ -2,8 +2,16 @@
 
 namespace MoreNet.Cryptography.Algorithm
 {
+    /// <summary>
+    /// Name of hash algorithm.
+    /// </summary>
     public struct HashName : IEquatable<HashName>
     {
+        private HashName(string name)
+        {
+            Name = name;
+        }
+
         /// <summary>
         /// Gets a <see cref="HashName" /> representing "MD5".
         /// </summary>
@@ -43,28 +51,28 @@ namespace MoreNet.Cryptography.Algorithm
         public string Name { get; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="HashName"/> struct.
+        /// Equal operator.
         /// </summary>
-        /// <param name="name">The custom hash algorithm name.</param>
-        public HashName(string name)
-        {
-            Name = name;
-        }
-
-        /// <inheritdoc/>
-        public override string ToString() => Name ?? string.Empty;
-
-        /// <inheritdoc/>
-        public override bool Equals(object obj) => obj is HashName && Equals((HashName)obj);
-
-        /// <inheritdoc/>
-        public bool Equals(HashName other) => Name == other.Name;
-
-        /// <inheritdoc/>
-        public override int GetHashCode() => Name?.GetHashCode() ?? 0;
-
+        /// <param name="left">Left.</param>
+        /// <param name="right">Right.</param>
+        /// <returns>Is equal.</returns>
         public static bool operator ==(HashName left, HashName right) => left.Equals(right);
 
+        /// <summary>
+        /// Not equal operator.
+        /// </summary>
+        /// <param name="left">Left.</param>
+        /// <param name="right">Right.</param>
+        /// <returns>Is not equal.</returns>
         public static bool operator !=(HashName left, HashName right) => !(left == right);
+
+        /// <inheritdoc/>
+        public override bool Equals(object obj) => obj is HashName other && Equals(other);
+
+        /// <inheritdoc/>
+        public override int GetHashCode() => HashCode.Combine(this.Name);
+
+        /// <inheritdoc/>
+        public bool Equals(HashName other) => this.Name == other.Name;
     }
 }

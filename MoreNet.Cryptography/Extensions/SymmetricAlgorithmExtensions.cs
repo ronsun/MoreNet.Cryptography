@@ -1,4 +1,5 @@
 ﻿using MoreNet.Cryptography;
+using MoreNet.Cryptography.Assertion;
 using System.IO;
 using System.Text;
 
@@ -57,15 +58,8 @@ namespace System.Security.Cryptography
         /// <returns>Ciphertext bytes. </returns>
         public static byte[] Encrypt(this SymmetricAlgorithm symmetric, byte[] plaintextBytes)
         {
-            if (symmetric == null)
-            {
-                throw new ArgumentNullException(nameof(symmetric));
-            }
-
-            if (plaintextBytes == null)
-            {
-                throw new ArgumentNullException(nameof(plaintextBytes));
-            }
+            Argument.ShouldNotEmpty(symmetric, nameof(symmetric));
+            Argument.ShouldNotEmpty(plaintextBytes, nameof(plaintextBytes));
 
             MemoryStream ms = new MemoryStream();
             using (CryptoStream cs = new CryptoStream(ms, symmetric.CreateEncryptor(), CryptoStreamMode.Write))
