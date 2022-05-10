@@ -42,7 +42,7 @@ namespace MoreNet.Cryptography.Algorithm
         public static bool operator !=(AsymmetricName left, AsymmetricName right) => !(left == right);
 
         /// <inheritdoc/>
-        public override bool Equals(object obj) => obj is KeyedHashName other && Equals(other);
+        public override bool Equals(object obj) => obj is AsymmetricName other && Equals(other);
 
         /// <inheritdoc/>
         public override int GetHashCode() => HashCode.Combine(this.Name);
