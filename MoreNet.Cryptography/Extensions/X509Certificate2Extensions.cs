@@ -1,8 +1,9 @@
 ﻿using MoreNet.Cryptography.Assertion;
 using System.IO;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 
-namespace System.Security.Cryptography.X509Certificates
+namespace MoreNet.Cryptography.Extensions
 {
     /// <summary>
     /// Extension methods for X509Certificate2.

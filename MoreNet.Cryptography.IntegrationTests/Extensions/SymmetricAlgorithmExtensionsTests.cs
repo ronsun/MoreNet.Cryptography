@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using MoreNet.Cryptography.Extensions;
 using NUnit.Framework;
 using System.Collections;
 using System.Text;

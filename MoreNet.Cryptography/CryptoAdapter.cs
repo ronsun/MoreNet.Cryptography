@@ -1,4 +1,5 @@
 ﻿using MoreNet.Cryptography.Algorithm;
+using MoreNet.Cryptography.Extensions;
 using System.Security.Cryptography;
 using System.Text;
 

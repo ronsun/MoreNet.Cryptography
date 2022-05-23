@@ -1,10 +1,11 @@
-﻿using MoreNet.Cryptography;
-using MoreNet.Cryptography.Assertion;
+﻿using MoreNet.Cryptography.Assertion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 
-namespace System.Security.Cryptography
+namespace MoreNet.Cryptography.Extensions
 {
     /// <summary>
     /// Extensions for <see cref="RSA"/>.

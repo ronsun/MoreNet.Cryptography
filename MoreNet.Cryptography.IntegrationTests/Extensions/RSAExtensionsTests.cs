@@ -1,6 +1,7 @@
 ﻿#if NETCOREAPP3_1_OR_GREATER
 
 using FluentAssertions;
+using MoreNet.Cryptography.Extensions;
 using NUnit.Framework;
 using System;
 using System.Collections;
