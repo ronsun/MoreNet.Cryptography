@@ -151,6 +151,75 @@ namespace MoreNet.Cryptography.Extensions
             return rsa.VerifyData(dataBytes, signatureBytes, hashAlgoName, padding);
         }
 
+#if NETSTANDARD2_1_OR_GREATER
+
+        /// <summary>
+        /// Import private key with detected format <see cref="RSAPrivateKeyForamt"/>.
+        /// </summary>
+        /// <param name="rsa"><see cref="RSA"/>.</param>
+        /// <param name="privateKey">Valid private key.</param>
+        public static void ImportPrivateKey(this RSA rsa, string privateKey)
+        {
+            Argument.ShouldNotEmpty(rsa, nameof(rsa));
+            Argument.ShouldNotEmpty(privateKey, nameof(privateKey));
+
+            var format = RSAKeyFormatDetector.DetectPrivateKeyFormat(privateKey);
+            switch (format)
+            {
+                case RSAPrivateKeyForamt.Xml:
+                    rsa.FromXmlString(privateKey);
+                    break;
+
+                case RSAPrivateKeyForamt.Pkcs1:
+                    var pcks1Bytes = Convert.FromBase64String(privateKey);
+                    rsa.ImportRSAPrivateKey(pcks1Bytes, out int _);
+                    break;
+
+                case RSAPrivateKeyForamt.Pkcs8:
+                    var pcks8Bytes = Convert.FromBase64String(privateKey);
+                    rsa.ImportPkcs8PrivateKey(pcks8Bytes, out int _);
+                    break;
+
+                case RSAPrivateKeyForamt.None:
+                default:
+                    throw new ArgumentException("Unknown format of private key");
+            }
+        }
+
+        /// <summary>
+        /// Import public key with detected format <see cref="RSAPublicKeyForamt"/>.
+        /// </summary>
+        /// <param name="rsa"><see cref="RSA"/>.</param>
+        /// <param name="publicKey">Valid public key.</param>
+        public static void ImportPublicKey(this RSA rsa, string publicKey)
+        {
+            Argument.ShouldNotEmpty(rsa, nameof(rsa));
+            Argument.ShouldNotEmpty(publicKey, nameof(publicKey));
+
+            var format = RSAKeyFormatDetector.DetectRSAPublicKeyForamt(publicKey);
+            switch (format)
+            {
+                case RSAPublicKeyForamt.Xml:
+                    rsa.FromXmlString(publicKey);
+                    break;
+
+                case RSAPublicKeyForamt.Pkcs1:
+                    var pcks1Bytes = Convert.FromBase64String(publicKey);
+                    rsa.ImportRSAPublicKey(pcks1Bytes, out int _);
+                    break;
+
+                case RSAPublicKeyForamt.SubjectPublicKeyInfo:
+                    var pcks8Bytes = Convert.FromBase64String(publicKey);
+                    rsa.ImportSubjectPublicKeyInfo(pcks8Bytes, out int _);
+                    break;
+
+                case RSAPublicKeyForamt.None:
+                default:
+                    throw new ArgumentException("Unknown format of public key");
+            }
+        }
+#endif
+
         private static IEnumerable<byte[]> Chunk(byte[] source, int size)
         {
             int index = 0;
