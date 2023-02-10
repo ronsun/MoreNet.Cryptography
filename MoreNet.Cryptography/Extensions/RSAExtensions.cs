@@ -1,4 +1,4 @@
-﻿using MoreNet.Cryptography.Assertion;
+﻿using MoreNet.Foundation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
