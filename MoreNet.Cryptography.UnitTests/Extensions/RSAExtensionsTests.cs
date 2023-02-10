@@ -5,10 +5,10 @@ using System.Security.Cryptography;
 
 namespace MoreNet.Cryptography.Extensions.Tests
 {
+#if NETCOREAPP3_1_OR_GREATER
     [TestFixture()]
     public class RSAExtensionsTests
     {
-#if NETCOREAPP3_1_OR_GREATER
         [Test()]
         [TestCaseSource(nameof(ImportPrivateKeyTestCaseSource_ConstantKeys))]
         public void ImportPrivateKeyTest_ConstantKeys(string stubPrivateKey)
@@ -107,6 +107,6 @@ namespace MoreNet.Cryptography.Extensions.Tests
                 yield return new TestCaseData(RSA.Create(length).ToXmlString(false));
             }
         }
-#endif
     }
+#endif
 }
