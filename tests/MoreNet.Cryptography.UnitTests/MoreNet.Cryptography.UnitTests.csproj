@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MoreNet.Cryptography\MoreNet.Cryptography.csproj" />
+    <ProjectReference Include="..\..\src\MoreNet.Cryptography\MoreNet.Cryptography.csproj" />
   </ItemGroup>
 
 </Project>

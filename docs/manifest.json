@@ -1,0 +1,332 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Ron/Desktop/MyGithub/MoreNet.Cryptography/tools/MoreNet.Cryptography.DocFx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Algorithm.AsymmetricName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Algorithm.AsymmetricName.html",
+          "hash": "CoPVkEYMSNSJaIiEzaQ2i5/pwH41RXv0a5y4NyR11AY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Algorithm.HashName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Algorithm.HashName.html",
+          "hash": "Ez0uggsqhsHCCDbVWTGtENBrjhKwvPHXUALB8SIj2Ns="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Algorithm.KeyedHashName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Algorithm.KeyedHashName.html",
+          "hash": "OzuscjRsVkg7/qHwP+HT9FLUbJmNQk/4eVd66/sPKaI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Algorithm.SymmetricName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Algorithm.SymmetricName.html",
+          "hash": "OxnFuNNhO9UWS9xzGgf13co+eqPNFE/rmedzGat61iA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Algorithm.html",
+          "hash": "2C2cEnql3V2uu7wfxvF3B+CVvBDI359zQJDaX8Z/R1Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.html",
+          "hash": "QxN6C+RsVamQ6498NqaJhLaXLkb8SClkNSmSpLTmvag="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Extensions.RSAExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Extensions.RSAExtensions.html",
+          "hash": "MD3abGlYMfWmkf98omgZC4+SAojVOOsT9tHooMZkpVY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Extensions.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Extensions.ServiceCollectionExtensions.html",
+          "hash": "NxJxGDR/FjuYzQGP7f7RDeR8+3TX8rflxkcwciQoWZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html",
+          "hash": "ZT1Fd9+tRc9LtwZzw6bEQ511UY6sOsL8/tts+e0gyLg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Extensions.X509Certificate2Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Extensions.X509Certificate2Extensions.html",
+          "hash": "Z4aOaSoG5xKTywgeb48hHj76hRbRTZ24mrU13AuxlFs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.Extensions.html",
+          "hash": "kJ2GyuuOgBPnaUNrVWNYatPyZjin5MZbYtCoXm/e47s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.ICryptoAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.ICryptoAdapter.html",
+          "hash": "WzCKcKb2u+JQbIB5DSxppTpQB5RK7DNTSnVp1eb+nPY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.IRandomValueGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.IRandomValueGenerator.html",
+          "hash": "D+X/cSegriRxtsZnrPALmdqumWaHD9T9SoH7HmdUtj4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.RSAKeyFormatDetector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.RSAKeyFormatDetector.html",
+          "hash": "ZHqFBCjyeTo7S2fty2/gQlfKnsPQeHeDud+40Gw2Eu4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.RSAPrivateKeyForamt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.RSAPrivateKeyForamt.html",
+          "hash": "MjL0wm/BPWVKxvyC3RtWPFOnR578nPFJA6OFcn8u9us="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.RSAPublicKeyForamt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.RSAPublicKeyForamt.html",
+          "hash": "whVC2PGIuYy8eMRhMYj5XRgTJD8b716VWtPSN6kO6yU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoreNet.Cryptography.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoreNet.Cryptography.html",
+          "hash": "teTgToqHp0u1RexAfrFib9v5q6HidkZ65RlDgDQYTuQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "jKSb9Bz6FmAwx55x0mS2LiIB7FtMLZ/EcjdvLAKlVG4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Cy9+58IzSWGfZlIk9heULaVOCaLty/uP0On08OvDqOA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "6FAmv38Hpu09mF59yI6gzaz++IARPmCvpQZCDan8YHg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "bU1l97oWvsbhUKqE3BzZmLlKOyoJ53kh8J0YrlxVz3k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 17,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

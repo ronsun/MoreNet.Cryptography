@@ -1,0 +1,1369 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ICryptoAdapter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ICryptoAdapter
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoreNet.Cryptography.ICryptoAdapter">
+  
+  
+  <h1 id="MoreNet_Cryptography_ICryptoAdapter" data-uid="MoreNet.Cryptography.ICryptoAdapter" class="text-break">Interface ICryptoAdapter
+  </h1>
+  <div class="markdown level0 summary"><p>Crypto adapter.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoreNet.Cryptography.html">MoreNet.Cryptography</a></h6>
+  <h6><strong>Assembly</strong>: MoreNet.Cryptography.dll</h6>
+  <h5 id="MoreNet_Cryptography_ICryptoAdapter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICryptoAdapter</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_Byte___.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L35">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_Byte___" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.Byte[])">ComputeHashToHex(HashName, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Compute hash to Hex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ComputeHashToHex(HashName hashName, byte[] plaintextBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.HashName.html">HashName</a></td>
+        <td><span class="parametername">hashName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.HashName.html">HashName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">plaintextBytes</span></td>
+        <td><p>Plaintext in byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Hash in hex.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_String_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L18">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_String_" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.String)">ComputeHashToHex(HashName, String)</h4>
+  <div class="markdown level1 summary"><p>Compute hash to Hex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ComputeHashToHex(HashName hashName, string plaintext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.HashName.html">HashName</a></td>
+        <td><span class="parametername">hashName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.HashName.html">HashName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>Plaintext in <span class="xref">MoreNet.Cryptography.DefaultValues.Encoding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Hash in hex.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_String_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName%2CSystem.String%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L27">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_String_System_Text_Encoding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.String,System.Text.Encoding)">ComputeHashToHex(HashName, String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Compute hash to Hex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ComputeHashToHex(HashName hashName, string plaintext, Encoding plaintextEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.HashName.html">HashName</a></td>
+        <td><span class="parametername">hashName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.HashName.html">HashName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>Plaintext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">plaintextEncoding</span></td>
+        <td><p>Encoding of plaintext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Hash in hex.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_MoreNet_Cryptography_Algorithm_KeyedHashName_System_Byte___System_Byte___.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L53">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_MoreNet_Cryptography_Algorithm_KeyedHashName_System_Byte___System_Byte___" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName,System.Byte[],System.Byte[])">ComputeKeyedHashToHex(KeyedHashName, Byte[], Byte[])</h4>
+  <div class="markdown level1 summary"><p>Compute heyed hash to Hex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ComputeKeyedHashToHex(KeyedHashName hashName, byte[] plaintextBytes, byte[] keyBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.KeyedHashName.html">KeyedHashName</a></td>
+        <td><span class="parametername">hashName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.HashName.html">HashName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">plaintextBytes</span></td>
+        <td><p>Plaintext in byte array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">keyBytes</span></td>
+        <td><p>Key in byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Hash in hex.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_MoreNet_Cryptography_Algorithm_KeyedHashName_System_String_System_String_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L44">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_MoreNet_Cryptography_Algorithm_KeyedHashName_System_String_System_String_" data-uid="MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName,System.String,System.String)">ComputeKeyedHashToHex(KeyedHashName, String, String)</h4>
+  <div class="markdown level1 summary"><p>Compute heyed hash to Hex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ComputeKeyedHashToHex(KeyedHashName hashName, string plaintext, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.KeyedHashName.html">KeyedHashName</a></td>
+        <td><span class="parametername">hashName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.HashName.html">HashName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>Plaintext in <span class="xref">MoreNet.Cryptography.DefaultValues.Encoding</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key in <span class="xref">MoreNet.Cryptography.DefaultValues.Encoding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Hash in hex.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_Decrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L120">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_Decrypt_" data-uid="MoreNet.Cryptography.ICryptoAdapter.Decrypt*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_Decrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___" data-uid="MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])">Decrypt(SymmetricName, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Decrypt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] Decrypt(SymmetricName symmetricName, byte[] ciphertextBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a></td>
+        <td><span class="parametername">symmetricName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">ciphertextBytes</span></td>
+        <td><p>Ciphertext in byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Plaintext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_Decrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___System_Text_Encoding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName%2CSystem.Byte%5B%5D%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L112">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_Decrypt_" data-uid="MoreNet.Cryptography.ICryptoAdapter.Decrypt*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_Decrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___System_Text_Encoding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[],System.Text.Encoding)">Decrypt(SymmetricName, Byte[], Encoding)</h4>
+  <div class="markdown level1 summary"><p>Decrypt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Decrypt(SymmetricName symmetricName, byte[] ciphertextBytes, Encoding plaintextEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a></td>
+        <td><span class="parametername">symmetricName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">ciphertextBytes</span></td>
+        <td><p>Ciphertext in byte array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">plaintextEncoding</span></td>
+        <td><p>Encoding of plaintext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Plaintext in <span class="xref">MoreNet.Cryptography.DefaultValues.Encoding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L94">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_" data-uid="MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String)">DecryptFromBase64(SymmetricName, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypt from base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptFromBase64(SymmetricName symmetricName, string ciphertext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a></td>
+        <td><span class="parametername">symmetricName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ciphertext</span></td>
+        <td><p>Ciphertext in <span class="xref">MoreNet.Cryptography.DefaultValues.Encoding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Plaintext in <span class="xref">MoreNet.Cryptography.DefaultValues.Encoding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName%2CSystem.String%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L103">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_System_Text_Encoding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String,System.Text.Encoding)">DecryptFromBase64(SymmetricName, String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Decrypt from base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptFromBase64(SymmetricName symmetricName, string ciphertext, Encoding plaintextEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a></td>
+        <td><span class="parametername">symmetricName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ciphertext</span></td>
+        <td><p>Ciphertext in <span class="xref">MoreNet.Cryptography.DefaultValues.Encoding</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">plaintextEncoding</span></td>
+        <td><p>Encoding of plaintext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Plaintext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_Encrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.Encrypt(MoreNet.Cryptography.Algorithm.SymmetricName%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L86">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_Encrypt_" data-uid="MoreNet.Cryptography.ICryptoAdapter.Encrypt*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_Encrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___" data-uid="MoreNet.Cryptography.ICryptoAdapter.Encrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])">Encrypt(SymmetricName, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Encrypt to base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] Encrypt(SymmetricName symmetricName, byte[] plaintextBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a></td>
+        <td><span class="parametername">symmetricName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">plaintextBytes</span></td>
+        <td><p>Plaintext in byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Ciphertext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L78">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___" data-uid="MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])">EncryptToBase64(SymmetricName, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Encrypt to base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptToBase64(SymmetricName symmetricName, byte[] plaintextBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a></td>
+        <td><span class="parametername">symmetricName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">plaintextBytes</span></td>
+        <td><p>Plaintext in byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Ciphertext in base64 string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L61">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_" data-uid="MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String)">EncryptToBase64(SymmetricName, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypt to base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptToBase64(SymmetricName symmetricName, string plaintext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a></td>
+        <td><span class="parametername">symmetricName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>Plaintext in <span class="xref">MoreNet.Cryptography.DefaultValues.Encoding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Ciphertext in base64.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName%2CSystem.String%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L70">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_System_Text_Encoding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String,System.Text.Encoding)">EncryptToBase64(SymmetricName, String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Encrypt to base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptToBase64(SymmetricName symmetricName, string plaintext, Encoding plaintextEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a></td>
+        <td><span class="parametername">symmetricName</span></td>
+        <td><p><a class="xref" href="MoreNet.Cryptography.Algorithm.SymmetricName.html">SymmetricName</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>Plaintext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">plaintextEncoding</span></td>
+        <td><p>Encoding of <code data-dev-comment-type="paramref" class="paramref">plaintext</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Ciphertext in base64 string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunks_System_Byte___System_Security_Cryptography_RSAEncryptionPadding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks(System.Byte%5B%5D%2CSystem.Security.Cryptography.RSAEncryptionPadding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L152">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunks_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunks_System_Byte___System_Security_Cryptography_RSAEncryptionPadding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)">RSADecryptChunks(Byte[], RSAEncryptionPadding)</h4>
+  <div class="markdown level1 summary"><p>Decrypt. If plaintext longer than key size, will slice and decrypt all of chunks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] RSADecryptChunks(byte[] ciphertextBytes, RSAEncryptionPadding padding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">ciphertextBytes</span></td>
+        <td><p>Ciphertext bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Cryptography.RSAEncryptionPadding</span></td>
+        <td><span class="parametername">padding</span></td>
+        <td><p><span class="xref">System.Security.Cryptography.RSAEncryptionPadding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Plaintext in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunksFromBase64_System_String_System_Security_Cryptography_RSAEncryptionPadding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64(System.String%2CSystem.Security.Cryptography.RSAEncryptionPadding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L144">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunksFromBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunksFromBase64_System_String_System_Security_Cryptography_RSAEncryptionPadding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64(System.String,System.Security.Cryptography.RSAEncryptionPadding)">RSADecryptChunksFromBase64(String, RSAEncryptionPadding)</h4>
+  <div class="markdown level1 summary"><p>Decrypt. If plaintext longer than key size, will slice and decrypt all of chunks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RSADecryptChunksFromBase64(string ciphertext, RSAEncryptionPadding padding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ciphertext</span></td>
+        <td><p>Ciphertext in base64 string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Cryptography.RSAEncryptionPadding</span></td>
+        <td><span class="parametername">padding</span></td>
+        <td><p><span class="xref">System.Security.Cryptography.RSAEncryptionPadding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Plaintext in UFT-8.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunks_System_Byte___System_Security_Cryptography_RSAEncryptionPadding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks(System.Byte%5B%5D%2CSystem.Security.Cryptography.RSAEncryptionPadding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L136">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunks_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunks_System_Byte___System_Security_Cryptography_RSAEncryptionPadding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)">RSAEncryptChunks(Byte[], RSAEncryptionPadding)</h4>
+  <div class="markdown level1 summary"><p>Encrypt. If plaintext longer than key size, will slice and encrypt all of chunks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] RSAEncryptChunks(byte[] plaintextBytes, RSAEncryptionPadding padding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">plaintextBytes</span></td>
+        <td><p>Plaintext bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Cryptography.RSAEncryptionPadding</span></td>
+        <td><span class="parametername">padding</span></td>
+        <td><p><span class="xref">System.Security.Cryptography.RSAEncryptionPadding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Ciphertext in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunksToBase64_System_String_System_Security_Cryptography_RSAEncryptionPadding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64(System.String%2CSystem.Security.Cryptography.RSAEncryptionPadding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L128">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunksToBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunksToBase64_System_String_System_Security_Cryptography_RSAEncryptionPadding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64(System.String,System.Security.Cryptography.RSAEncryptionPadding)">RSAEncryptChunksToBase64(String, RSAEncryptionPadding)</h4>
+  <div class="markdown level1 summary"><p>Encrypt. If plaintext longer than key size, will slice and encrypt all of chunks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RSAEncryptChunksToBase64(string plaintext, RSAEncryptionPadding padding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>Plaintext in UTF-8.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Cryptography.RSAEncryptionPadding</span></td>
+        <td><span class="parametername">padding</span></td>
+        <td><p><span class="xref">System.Security.Cryptography.RSAEncryptionPadding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Ciphertext in base64 string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_System_String_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L159">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_System_String_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String)">RSASignDataToBase64(String)</h4>
+  <div class="markdown level1 summary"><p>Sign data to base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RSASignDataToBase64(string data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Plaintext in UTF-8.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Ciphertext in base64 string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_System_String_System_Text_Encoding_System_Security_Cryptography_HashAlgorithmName_System_Security_Cryptography_RSASignaturePadding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String%2CSystem.Text.Encoding%2CSystem.Security.Cryptography.HashAlgorithmName%2CSystem.Security.Cryptography.RSASignaturePadding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L169">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_System_String_System_Text_Encoding_System_Security_Cryptography_HashAlgorithmName_System_Security_Cryptography_RSASignaturePadding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String,System.Text.Encoding,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)">RSASignDataToBase64(String, Encoding, HashAlgorithmName, RSASignaturePadding)</h4>
+  <div class="markdown level1 summary"><p>Sign data to base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RSASignDataToBase64(string data, Encoding encoding, HashAlgorithmName hashAlgoName, RSASignaturePadding padding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Plaintext in UTF-8.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p><span class="xref">System.Text.Encoding</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Cryptography.HashAlgorithmName</span></td>
+        <td><span class="parametername">hashAlgoName</span></td>
+        <td><p><span class="xref">System.Security.Cryptography.HashAlgorithmName</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Cryptography.RSASignaturePadding</span></td>
+        <td><span class="parametername">padding</span></td>
+        <td><p><span class="xref">System.Security.Cryptography.RSASignaturePadding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Signature in base64 string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_System_String_System_String_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L181">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_System_String_System_String_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String,System.String)">RSAVerifyDataFromBase64(String, String)</h4>
+  <div class="markdown level1 summary"><p>Verify data from base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RSAVerifyDataFromBase64(string data, string signature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Plaintext in UTF-8.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>Signature in base64 string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Is <code data-dev-comment-type="paramref" class="paramref">data</code> valid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><span class="xref">System.Security.Cryptography.HashAlgorithmName</span> default to <span class="xref">System.Security.Cryptography.HashAlgorithmName.SHA1</span>.
+<span class="xref">System.Security.Cryptography.RSASignaturePadding</span> default to <span class="xref">System.Security.Cryptography.RSASignaturePadding.Pkcs1</span>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_System_String_System_Text_Encoding_System_String_System_Security_Cryptography_HashAlgorithmName_System_Security_Cryptography_RSASignaturePadding_.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String%2CSystem.Text.Encoding%2CSystem.String%2CSystem.Security.Cryptography.HashAlgorithmName%2CSystem.Security.Cryptography.RSASignaturePadding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L192">View Source</a>
+  </span>
+  <a id="MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64*"></a>
+  <h4 id="MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_System_String_System_Text_Encoding_System_String_System_Security_Cryptography_HashAlgorithmName_System_Security_Cryptography_RSASignaturePadding_" data-uid="MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String,System.Text.Encoding,System.String,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)">RSAVerifyDataFromBase64(String, Encoding, String, HashAlgorithmName, RSASignaturePadding)</h4>
+  <div class="markdown level1 summary"><p>Verify data from base64 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RSAVerifyDataFromBase64(string data, Encoding dataEncoding, string signature, HashAlgorithmName hashAlgoName, RSASignaturePadding padding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Plaintext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">dataEncoding</span></td>
+        <td><p>Encoding of plaintext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>Signature in base64 string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Cryptography.HashAlgorithmName</span></td>
+        <td><span class="parametername">hashAlgoName</span></td>
+        <td><p><span class="xref">System.Security.Cryptography.HashAlgorithmName</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Cryptography.RSASignaturePadding</span></td>
+        <td><span class="parametername">padding</span></td>
+        <td><p><span class="xref">System.Security.Cryptography.RSASignaturePadding</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Is <code data-dev-comment-type="paramref" class="paramref">data</code> valid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ronsun/MoreNet.Cryptography/new/master/apiSpec/new?filename=MoreNet_Cryptography_ICryptoAdapter.md&amp;value=---%0Auid%3A%20MoreNet.Cryptography.ICryptoAdapter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ronsun/MoreNet.Cryptography/blob/master/src/MoreNet.Cryptography/ICryptoAdapter.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
