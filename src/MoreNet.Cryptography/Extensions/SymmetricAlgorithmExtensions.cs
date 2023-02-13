@@ -31,12 +31,11 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Ciphertext. </returns>
         public static string EncryptToBase64(this SymmetricAlgorithm symmetric, string plaintext, Encoding plaintextEncoding)
         {
-            if (plaintextEncoding == null)
-            {
-                throw new ArgumentNullException(nameof(plaintextEncoding));
-            }
+            Argument.ShouldNotNull(plaintext, nameof(plaintext));
+            Argument.ShouldNotNull(plaintextEncoding, nameof(plaintextEncoding));
 
-            return EncryptToBase64(symmetric, plaintextEncoding.GetBytes(plaintext));
+            var plaintextEncodingBytes = plaintextEncoding.GetBytes(plaintext);
+            return EncryptToBase64(symmetric, plaintextEncodingBytes);
         }
 
         /// <summary>
@@ -59,8 +58,8 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Ciphertext bytes. </returns>
         public static byte[] Encrypt(this SymmetricAlgorithm symmetric, byte[] plaintextBytes)
         {
-            Argument.ShouldNotEmpty(symmetric, nameof(symmetric));
-            Argument.ShouldNotEmpty(plaintextBytes, nameof(plaintextBytes));
+            Argument.ShouldNotNull(symmetric, nameof(symmetric));
+            Argument.ShouldNotNull(plaintextBytes, nameof(plaintextBytes));
 
             MemoryStream ms = new MemoryStream();
             using (CryptoStream cs = new CryptoStream(ms, symmetric.CreateEncryptor(), CryptoStreamMode.Write))
@@ -91,10 +90,8 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Plaintext. </returns>
         public static string DecryptFromBase64(this SymmetricAlgorithm symmetric, string ciphertext, Encoding plaintextEncoding)
         {
-            if (plaintextEncoding == null)
-            {
-                throw new ArgumentNullException(nameof(plaintextEncoding));
-            }
+            Argument.ShouldNotNull(ciphertext, nameof(ciphertext));
+            Argument.ShouldNotNull(plaintextEncoding, nameof(plaintextEncoding));
 
             var ciphertextBytes = Convert.FromBase64String(ciphertext);
             var plaintextBytes = Decrypt(symmetric, ciphertextBytes);
@@ -110,10 +107,8 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Plaintext. </returns>
         public static string Decrypt(this SymmetricAlgorithm symmetric, byte[] ciphertextBytes, Encoding plaintextEncoding)
         {
-            if (plaintextEncoding == null)
-            {
-                throw new ArgumentNullException(nameof(plaintextEncoding));
-            }
+            Argument.ShouldNotNull(ciphertextBytes, nameof(ciphertextBytes));
+            Argument.ShouldNotNull(plaintextEncoding, nameof(plaintextEncoding));
 
             var plaintextBytes = Decrypt(symmetric, ciphertextBytes);
             return plaintextEncoding.GetString(plaintextBytes);
@@ -127,15 +122,8 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Plaintext. </returns>
         public static byte[] Decrypt(this SymmetricAlgorithm symmetric, byte[] ciphertextBytes)
         {
-            if (symmetric == null)
-            {
-                throw new ArgumentNullException(nameof(symmetric));
-            }
-
-            if (ciphertextBytes == null)
-            {
-                throw new ArgumentNullException(nameof(ciphertextBytes));
-            }
+            Argument.ShouldNotNull(symmetric, nameof(symmetric));
+            Argument.ShouldNotNull(ciphertextBytes, nameof(ciphertextBytes));
 
             MemoryStream ms = new MemoryStream();
             using (CryptoStream cs = new CryptoStream(ms, symmetric.CreateDecryptor(), CryptoStreamMode.Write))

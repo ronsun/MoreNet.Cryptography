@@ -20,7 +20,7 @@ namespace System.Security.Cryptography.IntegrationTests
             string stubPrivateKey)
         {
             // arrange
-            var stubPlaintext = "".PadLeft(stubPalintextSizeInByte, 'a');
+            var stubPlaintext = string.Empty.PadLeft(stubPalintextSizeInByte, 'a');
             var stubEncryptRSA = CreateRSAWithPublicKey(stubPublicKey);
             var stubDecryptRSA = CreateRSAWithPrivateKey(stubPrivateKey);
 

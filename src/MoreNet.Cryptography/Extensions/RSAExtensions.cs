@@ -30,6 +30,8 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Ciphertext in base64 string.</returns>
         public static string EncryptChunksToBase64(this RSA rsa, string plaintext, RSAEncryptionPadding padding)
         {
+            Argument.ShouldNotNull(plaintext, nameof(plaintext));
+
             var plaintextBytes = DefaultValues.Encoding.GetBytes(plaintext);
             var ciphertextBytes = EncryptChunks(rsa, plaintextBytes, padding);
             return Convert.ToBase64String(ciphertextBytes);
@@ -44,7 +46,9 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Ciphertext in bytes.</returns>
         public static byte[] EncryptChunks(this RSA rsa, byte[] plaintextBytes, RSAEncryptionPadding padding)
         {
-            Argument.ShouldNotEmpty(rsa, nameof(rsa));
+            Argument.ShouldNotNull(rsa, nameof(rsa));
+            Argument.ShouldNotNull(plaintextBytes, nameof(plaintextBytes));
+            Argument.ShouldNotNull(padding, nameof(padding));
 
             var size = (rsa.KeySize / 8) - _offsetDictionary[padding];
             return Chunk(plaintextBytes, size)
@@ -62,6 +66,8 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Plaintext in UFT-8.</returns>
         public static string DecryptChunksFromBase64(this RSA rsa, string ciphertext, RSAEncryptionPadding padding)
         {
+            Argument.ShouldNotNull(ciphertext, nameof(ciphertext));
+
             var ciphertextBytes = Convert.FromBase64String(ciphertext);
             var plaintextBytes = DecryptChunks(rsa, ciphertextBytes, padding);
             return DefaultValues.Encoding.GetString(plaintextBytes);
@@ -76,7 +82,9 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Plaintext in bytes.</returns>
         public static byte[] DecryptChunks(this RSA rsa, byte[] ciphertextBytes, RSAEncryptionPadding padding)
         {
-            Argument.ShouldNotEmpty(rsa, nameof(rsa));
+            Argument.ShouldNotNull(rsa, nameof(rsa));
+            Argument.ShouldNotNull(ciphertextBytes, nameof(ciphertextBytes));
+            Argument.ShouldNotNull(padding, nameof(padding));
 
             var size = rsa.KeySize / 8;
             return Chunk(ciphertextBytes, size)
@@ -107,8 +115,10 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Signature in base64 string.</returns>
         public static string SignDataToBase64(this RSA rsa, string data, Encoding encoding, HashAlgorithmName hashAlgoName, RSASignaturePadding padding)
         {
-            Argument.ShouldNotEmpty(encoding, nameof(encoding));
-            Argument.ShouldNotEmpty(rsa, nameof(rsa));
+            Argument.ShouldNotNull(rsa, nameof(rsa));
+            Argument.ShouldNotNull(data, nameof(data));
+            Argument.ShouldNotNull(encoding, nameof(encoding));
+            Argument.ShouldNotNull(padding, nameof(padding));
 
             var dataBytes = encoding.GetBytes(data);
             var signatureBytes = rsa.SignData(dataBytes, hashAlgoName, padding);
@@ -143,8 +153,11 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Is <paramref name="data"/> valid.</returns>
         public static bool VerifyDataFromBase64(this RSA rsa, string data, Encoding dataEncoding, string signature, HashAlgorithmName hashAlgoName, RSASignaturePadding padding)
         {
-            Argument.ShouldNotEmpty(dataEncoding, nameof(dataEncoding));
-            Argument.ShouldNotEmpty(rsa, nameof(rsa));
+            Argument.ShouldNotNull(rsa, nameof(rsa));
+            Argument.ShouldNotNull(data, nameof(data));
+            Argument.ShouldNotNull(dataEncoding, nameof(dataEncoding));
+            Argument.ShouldNotNull(signature, nameof(signature));
+            Argument.ShouldNotNull(padding, nameof(padding));
 
             var dataBytes = dataEncoding.GetBytes(data);
             var signatureBytes = Convert.FromBase64String(signature);
@@ -160,7 +173,7 @@ namespace MoreNet.Cryptography.Extensions
         /// <param name="privateKey">Valid private key.</param>
         public static void ImportPrivateKey(this RSA rsa, string privateKey)
         {
-            Argument.ShouldNotEmpty(rsa, nameof(rsa));
+            Argument.ShouldNotNull(rsa, nameof(rsa));
             Argument.ShouldNotEmpty(privateKey, nameof(privateKey));
 
             var format = RSAKeyFormatDetector.DetectPrivateKeyFormat(privateKey);
@@ -193,7 +206,7 @@ namespace MoreNet.Cryptography.Extensions
         /// <param name="publicKey">Valid public key.</param>
         public static void ImportPublicKey(this RSA rsa, string publicKey)
         {
-            Argument.ShouldNotEmpty(rsa, nameof(rsa));
+            Argument.ShouldNotNull(rsa, nameof(rsa));
             Argument.ShouldNotEmpty(publicKey, nameof(publicKey));
 
             var format = RSAKeyFormatDetector.DetectRSAPublicKeyForamt(publicKey);

@@ -24,8 +24,7 @@ namespace MoreNet.Cryptography.Extensions
             string fullName,
             string password)
         {
-            Argument.ShouldNotEmpty(cert, nameof(cert));
-            Argument.ShouldNotEmpty(assembly, nameof(assembly));
+            Argument.ShouldNotNull(password, nameof(password));
 
             return Import(cert, assembly, fullName, password, default);
         }
@@ -44,9 +43,6 @@ namespace MoreNet.Cryptography.Extensions
             string fullName,
             X509KeyStorageFlags keyStorageFlags)
         {
-            Argument.ShouldNotEmpty(cert, nameof(cert));
-            Argument.ShouldNotEmpty(assembly, nameof(assembly));
-
             return Import(cert, assembly, fullName, default, keyStorageFlags);
         }
 
@@ -57,6 +53,10 @@ namespace MoreNet.Cryptography.Extensions
             string password,
             X509KeyStorageFlags keyStorageFlags)
         {
+            Argument.ShouldNotNull(cert, nameof(cert));
+            Argument.ShouldNotNull(assembly, nameof(assembly));
+            Argument.ShouldNotNull(fullName, nameof(fullName));
+
             using (Stream certStream = assembly.GetManifestResourceStream(fullName))
             {
                 byte[] rawBytes = new byte[certStream.Length];

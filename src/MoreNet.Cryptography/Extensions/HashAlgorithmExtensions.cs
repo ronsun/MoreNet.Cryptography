@@ -30,9 +30,11 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Hashed string.</returns>
         public static string ComputeHashToHex(this HashAlgorithm hash, string plaintext, Encoding plaintextEncoding)
         {
-            Argument.ShouldNotEmpty(plaintextEncoding, nameof(plaintextEncoding));
+            Argument.ShouldNotNull(plaintext, nameof(plaintext));
+            Argument.ShouldNotNull(plaintextEncoding, nameof(plaintextEncoding));
 
-            return ComputeHashToHex(hash, plaintextEncoding.GetBytes(plaintext));
+            var plaintextBytes = plaintextEncoding.GetBytes(plaintext);
+            return ComputeHashToHex(hash, plaintextBytes);
         }
 
         /// <summary>
@@ -43,7 +45,8 @@ namespace MoreNet.Cryptography.Extensions
         /// <returns>Hashed string.</returns>
         public static string ComputeHashToHex(this HashAlgorithm hash, byte[] plaintextBytes)
         {
-            Argument.ShouldNotEmpty(hash, nameof(hash));
+            Argument.ShouldNotNull(hash, nameof(hash));
+            Argument.ShouldNotNull(plaintextBytes, nameof(plaintextBytes));
 
             byte[] ciphertextBytes = hash.ComputeHash(plaintextBytes);
 
