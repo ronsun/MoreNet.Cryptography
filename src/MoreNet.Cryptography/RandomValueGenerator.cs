@@ -1,5 +1,8 @@
-﻿using System;
+﻿using MoreNet.Foundation;
+using MoreNet.Foundation.Globalization;
+using System;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace MoreNet.Cryptography
 {
@@ -38,14 +41,18 @@ namespace MoreNet.Cryptography
         /// <inheritdoc/>
         public string GetString(int length, string dictionary)
         {
-            var charArray = new char[length];
+            Argument.ShouldInRange(length, 0, int.MaxValue, nameof(length));
+            Argument.ShouldNotEmpty(dictionary, nameof(dictionary));
+
+            var textElementDictionary = new TextElementString(dictionary);
+            var sb = new StringBuilder();
             for (int i = 0; i < length; i++)
             {
-                var index = GetInt(0, dictionary.Length);
-                charArray[i] = dictionary[index];
+                var index = GetInt(0, textElementDictionary.Length);
+                sb.Append(textElementDictionary[index]);
             }
 
-            return new string(charArray);
+            return sb.ToString();
         }
 
         /// <inheritdoc/>
@@ -67,14 +74,14 @@ namespace MoreNet.Cryptography
                 return min;
             }
 
-            // use Int32 (4 bytes) bacause keyword 'int' is default as Int32
+            // Use 4 bytes for Int32.
             var nextBytes = new byte[4];
             _rng.GetBytes(nextBytes);
 
             var range = (long)max - min;
             var shift = BitConverter.ToInt32(nextBytes, 0) % range;
 
-            // shift always between int.MinValue and int.MaxValue, so it's safe convert to int directly
+            // Shift always between int.MinValue and int.MaxValue, so it's safe convert to int directly
             if (shift < 0)
             {
                 return max + (int)shift;

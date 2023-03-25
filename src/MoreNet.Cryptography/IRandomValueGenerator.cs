@@ -41,7 +41,8 @@
         int GetInt();
 
         /// <summary>
-        /// Get random int in range, include min but exclude max.
+        /// Get random int in range, include <paramref name="min"/> but exclude <paramref name="max"/>.
+        /// One exception is while <paramref name="min"/> is equals to <paramref name="max"/>, returns <paramref name="min"/>.
         /// </summary>
         /// <param name="min">Minimum value of range, default: 0.</param>
         /// <param name="max">Maximun valud of range, defalut: int.MaxValue. </param>
