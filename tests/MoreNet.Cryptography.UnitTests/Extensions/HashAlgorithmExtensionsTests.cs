@@ -4,7 +4,7 @@ using NUnit.Framework;
 using System.Collections;
 using System.Text;
 
-namespace System.Security.Cryptography.UnitTests
+namespace System.Security.Cryptography.Extensions.UnitTests
 {
     [TestFixture()]
     public partial class HashAlgorithmExtensionsTests
