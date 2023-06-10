@@ -59,7 +59,7 @@ namespace MoreNet.Cryptography.Algorithm
         /// <param name="left">Left.</param>
         /// <param name="right">Right.</param>
         /// <returns>Is not equal.</returns>
-        public static bool operator !=(SymmetricName left, SymmetricName right) => !(left == right);
+        public static bool operator !=(SymmetricName left, SymmetricName right) => !left.Equals(right);
 
         /// <inheritdoc/>
         public override bool Equals(object obj) => obj is SymmetricName other && Equals(other);

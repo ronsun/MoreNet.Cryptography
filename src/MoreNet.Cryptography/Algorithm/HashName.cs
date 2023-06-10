@@ -64,7 +64,7 @@ namespace MoreNet.Cryptography.Algorithm
         /// <param name="left">Left.</param>
         /// <param name="right">Right.</param>
         /// <returns>Is not equal.</returns>
-        public static bool operator !=(HashName left, HashName right) => !(left == right);
+        public static bool operator !=(HashName left, HashName right) => !left.Equals(right);
 
         /// <inheritdoc/>
         public override bool Equals(object obj) => obj is HashName other && Equals(other);
