@@ -1,20 +1,20 @@
 ﻿# MoreNet Cryptography
 
-A .NET library that improves cryptography functions and makes `System.Security.Cryptography` easier to use.
+A .NET library that simplifies cryptography tasks and makes `System.Security.Cryptography` easier to use.
 
 ## Introduction
 
 This library provides:
 
-- Easy-to-use extension methods for .NET cryptographic classes (e.g., `HashAlgorithm`, `SymmetricAlgorithm`, `RSA`) that can be applied to all derived classes of these types.
-- A high-level interface, `ICryptoAdapter`, to manage common encryption, decryption, signing, verification, and hashing tasks.
-- A simple random value generator (`IRandomValueGenerator`) using `System.Security.Cryptography.RandomNumberGenerator`. Since `RandomNumberGenerator` provides only basic functionality, this library offers additional utility methods to make random value generation easier and more convenient for users.
+- Easy-to-use extension methods for .NET cryptographic classes such as `HashAlgorithm`, `SymmetricAlgorithm`, and `RSA`, which can be applied to their derived classes.
+- A high-level interface, `ICryptoAdapter`, for common encryption, decryption, signing, verification, and hashing tasks.
+- A simple random value generator, `IRandomValueGenerator`, built on `System.Security.Cryptography.RandomNumberGenerator`. Since `RandomNumberGenerator` provides only basic functionality, this library adds utility methods to make random value generation easier and more convenient.
 
 These features help reduce repetitive code and make cryptographic operations easier in .NET projects.
 
 ## Installation
 
-Make sure your .NET project supports Dependency Injection. In an ASP.NET Core application, you can add this library in `Startup.cs`:
+If your .NET project uses Dependency Injection, you can register this library in `Startup.cs`:
 
 ```csharp
 public class Startup
@@ -29,11 +29,11 @@ public class Startup
 
 ## Usage
 
-> **Note: The examples provided here demonstrate basic usage. However, they have additional overloads and related functionalities. To explore all available features, use your IDE's auto-completion or review the source code.**
+> **Note: The examples below show basic usage. Additional overloads and related functionality are also available. To explore all available features, use your IDE's auto-completion or review the source code.**
 
 ### Using `ICryptoAdapter`
 
-`ICryptoAdapter` is designed for users who are not familiar with `System.Security.Cryptography`. It provides a simple entry point for common cryptographic operations and includes frequently used scenarios.
+`ICryptoAdapter` is designed for users who are not familiar with `System.Security.Cryptography`. It provides a simple entry point for common cryptographic operations and covers frequently used scenarios.
 
 Once the library is added, you can inject `ICryptoAdapter` into any class and use its methods. Example:
 
@@ -49,14 +49,14 @@ public class MyClass
 
     public void MyMethod()
     {
-        string ciphertext = _cryptoAdapter.ComputeHashToHex(HashName.MD5, "plaintext");
+        string hash = _cryptoAdapter.ComputeHashToHex(HashName.MD5, "plaintext");
     }
 }
 ```
 
 ### Using `System.Security.Cryptography` Classes Directly
 
-If you need more flexibility, you can still use .NET's cryptographic classes. This library offers extension methods to make tasks simpler.
+If you need more flexibility, you can still use .NET's cryptographic classes directly. This library provides extension methods to make common tasks simpler.
 
 #### Hash Algorithms
 
@@ -74,7 +74,7 @@ using (var md5 = new MD5CryptoServiceProvider())
 ```csharp
 using MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions;
 
-var aes = new AesCryptoServiceProvider
+var aes = new AesCryptoServiceProvider()
 {
     Mode = CipherMode.ECB,
     Key = GenerateKey(128)
@@ -96,7 +96,7 @@ using (var rsa = new RSACryptoServiceProvider())
 
 ### Generating Random Values
 
-This library provides `IRandomValueGenerator`, a simple wrapper for `System.Security.Cryptography.RandomNumberGenerator`.
+This library provides `IRandomValueGenerator`, a simple wrapper around `System.Security.Cryptography.RandomNumberGenerator`.
 
 ```csharp
 public class MyClass
@@ -117,8 +117,8 @@ public class MyClass
 
 ## Notes
 
-- **Easy to Extend**: This library is designed for convenience. You can still use `System.Security.Cryptography` classes along with these extension methods.
+- **Easy to Extend**: This library is designed for convenience. You can continue using `System.Security.Cryptography` classes together with these extension methods.
 
 ## Documentation
 
-See [API Doc](https://ronsun.github.io/MoreNet.Cryptography/api) for APIs.
+See the [API documentation](https://ronsun.github.io/MoreNet.Cryptography/api) for the full API reference.
