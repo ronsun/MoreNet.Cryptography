@@ -12,6 +12,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/ronsun/MoreNet.Cryptography</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ronsun/MoreNet.Cryptography</RepositoryUrl>
+    <PackageReleaseNotes>First Version</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
