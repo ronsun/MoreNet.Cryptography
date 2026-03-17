@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreNet.Cryptography.UnitTe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{817B00C8-68D0-4014-8D61-C4DFADF38068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreNet.Cryptography.DocFx", "tools\MoreNet.Cryptography.DocFx\MoreNet.Cryptography.DocFx.csproj", "{F7CB54EE-1789-4F04-812A-86804811C938}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreNet.Cryptography.Docfx", "tools\MoreNet.Cryptography.Docfx\MoreNet.Cryptography.Docfx.csproj", "{F7CB54EE-1789-4F04-812A-86804811C938}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
