@@ -26,11 +26,14 @@ references:
   fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.Equals(MoreNet.Cryptography.Algorithm.AsymmetricName)
   nameWithType: AsymmetricName.Equals(AsymmetricName)
 - uid: MoreNet.Cryptography.Algorithm.AsymmetricName.Equals(System.Object)
-  name: Equals(Object)
+  name: Equals(object)
   href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_Equals_System_Object_
   commentId: M:MoreNet.Cryptography.Algorithm.AsymmetricName.Equals(System.Object)
-  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.Equals(System.Object)
-  nameWithType: AsymmetricName.Equals(Object)
+  name.vb: Equals(Object)
+  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.Equals(object)
+  fullName.vb: MoreNet.Cryptography.Algorithm.AsymmetricName.Equals(Object)
+  nameWithType: AsymmetricName.Equals(object)
+  nameWithType.vb: AsymmetricName.Equals(Object)
 - uid: MoreNet.Cryptography.Algorithm.AsymmetricName.Equals*
   name: Equals
   href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_Equals_
@@ -64,32 +67,6 @@ references:
   isSpec: "True"
   fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.Name
   nameWithType: AsymmetricName.Name
-- uid: MoreNet.Cryptography.Algorithm.AsymmetricName.op_Equality(MoreNet.Cryptography.Algorithm.AsymmetricName,MoreNet.Cryptography.Algorithm.AsymmetricName)
-  name: Equality(AsymmetricName, AsymmetricName)
-  href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_op_Equality_MoreNet_Cryptography_Algorithm_AsymmetricName_MoreNet_Cryptography_Algorithm_AsymmetricName_
-  commentId: M:MoreNet.Cryptography.Algorithm.AsymmetricName.op_Equality(MoreNet.Cryptography.Algorithm.AsymmetricName,MoreNet.Cryptography.Algorithm.AsymmetricName)
-  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.Equality(MoreNet.Cryptography.Algorithm.AsymmetricName, MoreNet.Cryptography.Algorithm.AsymmetricName)
-  nameWithType: AsymmetricName.Equality(AsymmetricName, AsymmetricName)
-- uid: MoreNet.Cryptography.Algorithm.AsymmetricName.op_Equality*
-  name: Equality
-  href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_op_Equality_
-  commentId: Overload:MoreNet.Cryptography.Algorithm.AsymmetricName.op_Equality
-  isSpec: "True"
-  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.Equality
-  nameWithType: AsymmetricName.Equality
-- uid: MoreNet.Cryptography.Algorithm.AsymmetricName.op_Inequality(MoreNet.Cryptography.Algorithm.AsymmetricName,MoreNet.Cryptography.Algorithm.AsymmetricName)
-  name: Inequality(AsymmetricName, AsymmetricName)
-  href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_op_Inequality_MoreNet_Cryptography_Algorithm_AsymmetricName_MoreNet_Cryptography_Algorithm_AsymmetricName_
-  commentId: M:MoreNet.Cryptography.Algorithm.AsymmetricName.op_Inequality(MoreNet.Cryptography.Algorithm.AsymmetricName,MoreNet.Cryptography.Algorithm.AsymmetricName)
-  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.Inequality(MoreNet.Cryptography.Algorithm.AsymmetricName, MoreNet.Cryptography.Algorithm.AsymmetricName)
-  nameWithType: AsymmetricName.Inequality(AsymmetricName, AsymmetricName)
-- uid: MoreNet.Cryptography.Algorithm.AsymmetricName.op_Inequality*
-  name: Inequality
-  href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_op_Inequality_
-  commentId: Overload:MoreNet.Cryptography.Algorithm.AsymmetricName.op_Inequality
-  isSpec: "True"
-  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.Inequality
-  nameWithType: AsymmetricName.Inequality
 - uid: MoreNet.Cryptography.Algorithm.AsymmetricName.RSA
   name: RSA
   href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_RSA
@@ -103,6 +80,44 @@ references:
   isSpec: "True"
   fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.RSA
   nameWithType: AsymmetricName.RSA
+- uid: MoreNet.Cryptography.Algorithm.AsymmetricName.op_Equality(MoreNet.Cryptography.Algorithm.AsymmetricName,MoreNet.Cryptography.Algorithm.AsymmetricName)
+  name: operator ==(AsymmetricName, AsymmetricName)
+  href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_op_Equality_MoreNet_Cryptography_Algorithm_AsymmetricName_MoreNet_Cryptography_Algorithm_AsymmetricName_
+  commentId: M:MoreNet.Cryptography.Algorithm.AsymmetricName.op_Equality(MoreNet.Cryptography.Algorithm.AsymmetricName,MoreNet.Cryptography.Algorithm.AsymmetricName)
+  name.vb: =(AsymmetricName, AsymmetricName)
+  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.operator ==(MoreNet.Cryptography.Algorithm.AsymmetricName, MoreNet.Cryptography.Algorithm.AsymmetricName)
+  fullName.vb: MoreNet.Cryptography.Algorithm.AsymmetricName.=(MoreNet.Cryptography.Algorithm.AsymmetricName, MoreNet.Cryptography.Algorithm.AsymmetricName)
+  nameWithType: AsymmetricName.operator ==(AsymmetricName, AsymmetricName)
+  nameWithType.vb: AsymmetricName.=(AsymmetricName, AsymmetricName)
+- uid: MoreNet.Cryptography.Algorithm.AsymmetricName.op_Equality*
+  name: operator ==
+  href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_op_Equality_
+  commentId: Overload:MoreNet.Cryptography.Algorithm.AsymmetricName.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.operator ==
+  fullName.vb: MoreNet.Cryptography.Algorithm.AsymmetricName.=
+  nameWithType: AsymmetricName.operator ==
+  nameWithType.vb: AsymmetricName.=
+- uid: MoreNet.Cryptography.Algorithm.AsymmetricName.op_Inequality(MoreNet.Cryptography.Algorithm.AsymmetricName,MoreNet.Cryptography.Algorithm.AsymmetricName)
+  name: operator !=(AsymmetricName, AsymmetricName)
+  href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_op_Inequality_MoreNet_Cryptography_Algorithm_AsymmetricName_MoreNet_Cryptography_Algorithm_AsymmetricName_
+  commentId: M:MoreNet.Cryptography.Algorithm.AsymmetricName.op_Inequality(MoreNet.Cryptography.Algorithm.AsymmetricName,MoreNet.Cryptography.Algorithm.AsymmetricName)
+  name.vb: <>(AsymmetricName, AsymmetricName)
+  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.operator !=(MoreNet.Cryptography.Algorithm.AsymmetricName, MoreNet.Cryptography.Algorithm.AsymmetricName)
+  fullName.vb: MoreNet.Cryptography.Algorithm.AsymmetricName.<>(MoreNet.Cryptography.Algorithm.AsymmetricName, MoreNet.Cryptography.Algorithm.AsymmetricName)
+  nameWithType: AsymmetricName.operator !=(AsymmetricName, AsymmetricName)
+  nameWithType.vb: AsymmetricName.<>(AsymmetricName, AsymmetricName)
+- uid: MoreNet.Cryptography.Algorithm.AsymmetricName.op_Inequality*
+  name: operator !=
+  href: api/MoreNet.Cryptography.Algorithm.AsymmetricName.html#MoreNet_Cryptography_Algorithm_AsymmetricName_op_Inequality_
+  commentId: Overload:MoreNet.Cryptography.Algorithm.AsymmetricName.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: MoreNet.Cryptography.Algorithm.AsymmetricName.operator !=
+  fullName.vb: MoreNet.Cryptography.Algorithm.AsymmetricName.<>
+  nameWithType: AsymmetricName.operator !=
+  nameWithType.vb: AsymmetricName.<>
 - uid: MoreNet.Cryptography.Algorithm.HashName
   name: HashName
   href: api/MoreNet.Cryptography.Algorithm.HashName.html
@@ -116,11 +131,14 @@ references:
   fullName: MoreNet.Cryptography.Algorithm.HashName.Equals(MoreNet.Cryptography.Algorithm.HashName)
   nameWithType: HashName.Equals(HashName)
 - uid: MoreNet.Cryptography.Algorithm.HashName.Equals(System.Object)
-  name: Equals(Object)
+  name: Equals(object)
   href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_Equals_System_Object_
   commentId: M:MoreNet.Cryptography.Algorithm.HashName.Equals(System.Object)
-  fullName: MoreNet.Cryptography.Algorithm.HashName.Equals(System.Object)
-  nameWithType: HashName.Equals(Object)
+  name.vb: Equals(Object)
+  fullName: MoreNet.Cryptography.Algorithm.HashName.Equals(object)
+  fullName.vb: MoreNet.Cryptography.Algorithm.HashName.Equals(Object)
+  nameWithType: HashName.Equals(object)
+  nameWithType.vb: HashName.Equals(Object)
 - uid: MoreNet.Cryptography.Algorithm.HashName.Equals*
   name: Equals
   href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_Equals_
@@ -167,32 +185,6 @@ references:
   isSpec: "True"
   fullName: MoreNet.Cryptography.Algorithm.HashName.Name
   nameWithType: HashName.Name
-- uid: MoreNet.Cryptography.Algorithm.HashName.op_Equality(MoreNet.Cryptography.Algorithm.HashName,MoreNet.Cryptography.Algorithm.HashName)
-  name: Equality(HashName, HashName)
-  href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_op_Equality_MoreNet_Cryptography_Algorithm_HashName_MoreNet_Cryptography_Algorithm_HashName_
-  commentId: M:MoreNet.Cryptography.Algorithm.HashName.op_Equality(MoreNet.Cryptography.Algorithm.HashName,MoreNet.Cryptography.Algorithm.HashName)
-  fullName: MoreNet.Cryptography.Algorithm.HashName.Equality(MoreNet.Cryptography.Algorithm.HashName, MoreNet.Cryptography.Algorithm.HashName)
-  nameWithType: HashName.Equality(HashName, HashName)
-- uid: MoreNet.Cryptography.Algorithm.HashName.op_Equality*
-  name: Equality
-  href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_op_Equality_
-  commentId: Overload:MoreNet.Cryptography.Algorithm.HashName.op_Equality
-  isSpec: "True"
-  fullName: MoreNet.Cryptography.Algorithm.HashName.Equality
-  nameWithType: HashName.Equality
-- uid: MoreNet.Cryptography.Algorithm.HashName.op_Inequality(MoreNet.Cryptography.Algorithm.HashName,MoreNet.Cryptography.Algorithm.HashName)
-  name: Inequality(HashName, HashName)
-  href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_op_Inequality_MoreNet_Cryptography_Algorithm_HashName_MoreNet_Cryptography_Algorithm_HashName_
-  commentId: M:MoreNet.Cryptography.Algorithm.HashName.op_Inequality(MoreNet.Cryptography.Algorithm.HashName,MoreNet.Cryptography.Algorithm.HashName)
-  fullName: MoreNet.Cryptography.Algorithm.HashName.Inequality(MoreNet.Cryptography.Algorithm.HashName, MoreNet.Cryptography.Algorithm.HashName)
-  nameWithType: HashName.Inequality(HashName, HashName)
-- uid: MoreNet.Cryptography.Algorithm.HashName.op_Inequality*
-  name: Inequality
-  href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_op_Inequality_
-  commentId: Overload:MoreNet.Cryptography.Algorithm.HashName.op_Inequality
-  isSpec: "True"
-  fullName: MoreNet.Cryptography.Algorithm.HashName.Inequality
-  nameWithType: HashName.Inequality
 - uid: MoreNet.Cryptography.Algorithm.HashName.RIPEMD160
   name: RIPEMD160
   href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_RIPEMD160
@@ -258,6 +250,44 @@ references:
   isSpec: "True"
   fullName: MoreNet.Cryptography.Algorithm.HashName.SHA512
   nameWithType: HashName.SHA512
+- uid: MoreNet.Cryptography.Algorithm.HashName.op_Equality(MoreNet.Cryptography.Algorithm.HashName,MoreNet.Cryptography.Algorithm.HashName)
+  name: operator ==(HashName, HashName)
+  href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_op_Equality_MoreNet_Cryptography_Algorithm_HashName_MoreNet_Cryptography_Algorithm_HashName_
+  commentId: M:MoreNet.Cryptography.Algorithm.HashName.op_Equality(MoreNet.Cryptography.Algorithm.HashName,MoreNet.Cryptography.Algorithm.HashName)
+  name.vb: =(HashName, HashName)
+  fullName: MoreNet.Cryptography.Algorithm.HashName.operator ==(MoreNet.Cryptography.Algorithm.HashName, MoreNet.Cryptography.Algorithm.HashName)
+  fullName.vb: MoreNet.Cryptography.Algorithm.HashName.=(MoreNet.Cryptography.Algorithm.HashName, MoreNet.Cryptography.Algorithm.HashName)
+  nameWithType: HashName.operator ==(HashName, HashName)
+  nameWithType.vb: HashName.=(HashName, HashName)
+- uid: MoreNet.Cryptography.Algorithm.HashName.op_Equality*
+  name: operator ==
+  href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_op_Equality_
+  commentId: Overload:MoreNet.Cryptography.Algorithm.HashName.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: MoreNet.Cryptography.Algorithm.HashName.operator ==
+  fullName.vb: MoreNet.Cryptography.Algorithm.HashName.=
+  nameWithType: HashName.operator ==
+  nameWithType.vb: HashName.=
+- uid: MoreNet.Cryptography.Algorithm.HashName.op_Inequality(MoreNet.Cryptography.Algorithm.HashName,MoreNet.Cryptography.Algorithm.HashName)
+  name: operator !=(HashName, HashName)
+  href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_op_Inequality_MoreNet_Cryptography_Algorithm_HashName_MoreNet_Cryptography_Algorithm_HashName_
+  commentId: M:MoreNet.Cryptography.Algorithm.HashName.op_Inequality(MoreNet.Cryptography.Algorithm.HashName,MoreNet.Cryptography.Algorithm.HashName)
+  name.vb: <>(HashName, HashName)
+  fullName: MoreNet.Cryptography.Algorithm.HashName.operator !=(MoreNet.Cryptography.Algorithm.HashName, MoreNet.Cryptography.Algorithm.HashName)
+  fullName.vb: MoreNet.Cryptography.Algorithm.HashName.<>(MoreNet.Cryptography.Algorithm.HashName, MoreNet.Cryptography.Algorithm.HashName)
+  nameWithType: HashName.operator !=(HashName, HashName)
+  nameWithType.vb: HashName.<>(HashName, HashName)
+- uid: MoreNet.Cryptography.Algorithm.HashName.op_Inequality*
+  name: operator !=
+  href: api/MoreNet.Cryptography.Algorithm.HashName.html#MoreNet_Cryptography_Algorithm_HashName_op_Inequality_
+  commentId: Overload:MoreNet.Cryptography.Algorithm.HashName.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: MoreNet.Cryptography.Algorithm.HashName.operator !=
+  fullName.vb: MoreNet.Cryptography.Algorithm.HashName.<>
+  nameWithType: HashName.operator !=
+  nameWithType.vb: HashName.<>
 - uid: MoreNet.Cryptography.Algorithm.KeyedHashName
   name: KeyedHashName
   href: api/MoreNet.Cryptography.Algorithm.KeyedHashName.html
@@ -271,11 +301,14 @@ references:
   fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.Equals(MoreNet.Cryptography.Algorithm.KeyedHashName)
   nameWithType: KeyedHashName.Equals(KeyedHashName)
 - uid: MoreNet.Cryptography.Algorithm.KeyedHashName.Equals(System.Object)
-  name: Equals(Object)
+  name: Equals(object)
   href: api/MoreNet.Cryptography.Algorithm.KeyedHashName.html#MoreNet_Cryptography_Algorithm_KeyedHashName_Equals_System_Object_
   commentId: M:MoreNet.Cryptography.Algorithm.KeyedHashName.Equals(System.Object)
-  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.Equals(System.Object)
-  nameWithType: KeyedHashName.Equals(Object)
+  name.vb: Equals(Object)
+  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.Equals(object)
+  fullName.vb: MoreNet.Cryptography.Algorithm.KeyedHashName.Equals(Object)
+  nameWithType: KeyedHashName.Equals(object)
+  nameWithType.vb: KeyedHashName.Equals(Object)
 - uid: MoreNet.Cryptography.Algorithm.KeyedHashName.Equals*
   name: Equals
   href: api/MoreNet.Cryptography.Algorithm.KeyedHashName.html#MoreNet_Cryptography_Algorithm_KeyedHashName_Equals_
@@ -401,31 +434,43 @@ references:
   fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.Name
   nameWithType: KeyedHashName.Name
 - uid: MoreNet.Cryptography.Algorithm.KeyedHashName.op_Equality(MoreNet.Cryptography.Algorithm.KeyedHashName,MoreNet.Cryptography.Algorithm.KeyedHashName)
-  name: Equality(KeyedHashName, KeyedHashName)
+  name: operator ==(KeyedHashName, KeyedHashName)
   href: api/MoreNet.Cryptography.Algorithm.KeyedHashName.html#MoreNet_Cryptography_Algorithm_KeyedHashName_op_Equality_MoreNet_Cryptography_Algorithm_KeyedHashName_MoreNet_Cryptography_Algorithm_KeyedHashName_
   commentId: M:MoreNet.Cryptography.Algorithm.KeyedHashName.op_Equality(MoreNet.Cryptography.Algorithm.KeyedHashName,MoreNet.Cryptography.Algorithm.KeyedHashName)
-  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.Equality(MoreNet.Cryptography.Algorithm.KeyedHashName, MoreNet.Cryptography.Algorithm.KeyedHashName)
-  nameWithType: KeyedHashName.Equality(KeyedHashName, KeyedHashName)
+  name.vb: =(KeyedHashName, KeyedHashName)
+  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.operator ==(MoreNet.Cryptography.Algorithm.KeyedHashName, MoreNet.Cryptography.Algorithm.KeyedHashName)
+  fullName.vb: MoreNet.Cryptography.Algorithm.KeyedHashName.=(MoreNet.Cryptography.Algorithm.KeyedHashName, MoreNet.Cryptography.Algorithm.KeyedHashName)
+  nameWithType: KeyedHashName.operator ==(KeyedHashName, KeyedHashName)
+  nameWithType.vb: KeyedHashName.=(KeyedHashName, KeyedHashName)
 - uid: MoreNet.Cryptography.Algorithm.KeyedHashName.op_Equality*
-  name: Equality
+  name: operator ==
   href: api/MoreNet.Cryptography.Algorithm.KeyedHashName.html#MoreNet_Cryptography_Algorithm_KeyedHashName_op_Equality_
   commentId: Overload:MoreNet.Cryptography.Algorithm.KeyedHashName.op_Equality
   isSpec: "True"
-  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.Equality
-  nameWithType: KeyedHashName.Equality
+  name.vb: =
+  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.operator ==
+  fullName.vb: MoreNet.Cryptography.Algorithm.KeyedHashName.=
+  nameWithType: KeyedHashName.operator ==
+  nameWithType.vb: KeyedHashName.=
 - uid: MoreNet.Cryptography.Algorithm.KeyedHashName.op_Inequality(MoreNet.Cryptography.Algorithm.KeyedHashName,MoreNet.Cryptography.Algorithm.KeyedHashName)
-  name: Inequality(KeyedHashName, KeyedHashName)
+  name: operator !=(KeyedHashName, KeyedHashName)
   href: api/MoreNet.Cryptography.Algorithm.KeyedHashName.html#MoreNet_Cryptography_Algorithm_KeyedHashName_op_Inequality_MoreNet_Cryptography_Algorithm_KeyedHashName_MoreNet_Cryptography_Algorithm_KeyedHashName_
   commentId: M:MoreNet.Cryptography.Algorithm.KeyedHashName.op_Inequality(MoreNet.Cryptography.Algorithm.KeyedHashName,MoreNet.Cryptography.Algorithm.KeyedHashName)
-  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.Inequality(MoreNet.Cryptography.Algorithm.KeyedHashName, MoreNet.Cryptography.Algorithm.KeyedHashName)
-  nameWithType: KeyedHashName.Inequality(KeyedHashName, KeyedHashName)
+  name.vb: <>(KeyedHashName, KeyedHashName)
+  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.operator !=(MoreNet.Cryptography.Algorithm.KeyedHashName, MoreNet.Cryptography.Algorithm.KeyedHashName)
+  fullName.vb: MoreNet.Cryptography.Algorithm.KeyedHashName.<>(MoreNet.Cryptography.Algorithm.KeyedHashName, MoreNet.Cryptography.Algorithm.KeyedHashName)
+  nameWithType: KeyedHashName.operator !=(KeyedHashName, KeyedHashName)
+  nameWithType.vb: KeyedHashName.<>(KeyedHashName, KeyedHashName)
 - uid: MoreNet.Cryptography.Algorithm.KeyedHashName.op_Inequality*
-  name: Inequality
+  name: operator !=
   href: api/MoreNet.Cryptography.Algorithm.KeyedHashName.html#MoreNet_Cryptography_Algorithm_KeyedHashName_op_Inequality_
   commentId: Overload:MoreNet.Cryptography.Algorithm.KeyedHashName.op_Inequality
   isSpec: "True"
-  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.Inequality
-  nameWithType: KeyedHashName.Inequality
+  name.vb: <>
+  fullName: MoreNet.Cryptography.Algorithm.KeyedHashName.operator !=
+  fullName.vb: MoreNet.Cryptography.Algorithm.KeyedHashName.<>
+  nameWithType: KeyedHashName.operator !=
+  nameWithType.vb: KeyedHashName.<>
 - uid: MoreNet.Cryptography.Algorithm.SymmetricName
   name: SymmetricName
   href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html
@@ -465,11 +510,14 @@ references:
   fullName: MoreNet.Cryptography.Algorithm.SymmetricName.Equals(MoreNet.Cryptography.Algorithm.SymmetricName)
   nameWithType: SymmetricName.Equals(SymmetricName)
 - uid: MoreNet.Cryptography.Algorithm.SymmetricName.Equals(System.Object)
-  name: Equals(Object)
+  name: Equals(object)
   href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_Equals_System_Object_
   commentId: M:MoreNet.Cryptography.Algorithm.SymmetricName.Equals(System.Object)
-  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.Equals(System.Object)
-  nameWithType: SymmetricName.Equals(Object)
+  name.vb: Equals(Object)
+  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.Equals(object)
+  fullName.vb: MoreNet.Cryptography.Algorithm.SymmetricName.Equals(Object)
+  nameWithType: SymmetricName.Equals(object)
+  nameWithType.vb: SymmetricName.Equals(Object)
 - uid: MoreNet.Cryptography.Algorithm.SymmetricName.Equals*
   name: Equals
   href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_Equals_
@@ -503,32 +551,6 @@ references:
   isSpec: "True"
   fullName: MoreNet.Cryptography.Algorithm.SymmetricName.Name
   nameWithType: SymmetricName.Name
-- uid: MoreNet.Cryptography.Algorithm.SymmetricName.op_Equality(MoreNet.Cryptography.Algorithm.SymmetricName,MoreNet.Cryptography.Algorithm.SymmetricName)
-  name: Equality(SymmetricName, SymmetricName)
-  href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_op_Equality_MoreNet_Cryptography_Algorithm_SymmetricName_MoreNet_Cryptography_Algorithm_SymmetricName_
-  commentId: M:MoreNet.Cryptography.Algorithm.SymmetricName.op_Equality(MoreNet.Cryptography.Algorithm.SymmetricName,MoreNet.Cryptography.Algorithm.SymmetricName)
-  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.Equality(MoreNet.Cryptography.Algorithm.SymmetricName, MoreNet.Cryptography.Algorithm.SymmetricName)
-  nameWithType: SymmetricName.Equality(SymmetricName, SymmetricName)
-- uid: MoreNet.Cryptography.Algorithm.SymmetricName.op_Equality*
-  name: Equality
-  href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_op_Equality_
-  commentId: Overload:MoreNet.Cryptography.Algorithm.SymmetricName.op_Equality
-  isSpec: "True"
-  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.Equality
-  nameWithType: SymmetricName.Equality
-- uid: MoreNet.Cryptography.Algorithm.SymmetricName.op_Inequality(MoreNet.Cryptography.Algorithm.SymmetricName,MoreNet.Cryptography.Algorithm.SymmetricName)
-  name: Inequality(SymmetricName, SymmetricName)
-  href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_op_Inequality_MoreNet_Cryptography_Algorithm_SymmetricName_MoreNet_Cryptography_Algorithm_SymmetricName_
-  commentId: M:MoreNet.Cryptography.Algorithm.SymmetricName.op_Inequality(MoreNet.Cryptography.Algorithm.SymmetricName,MoreNet.Cryptography.Algorithm.SymmetricName)
-  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.Inequality(MoreNet.Cryptography.Algorithm.SymmetricName, MoreNet.Cryptography.Algorithm.SymmetricName)
-  nameWithType: SymmetricName.Inequality(SymmetricName, SymmetricName)
-- uid: MoreNet.Cryptography.Algorithm.SymmetricName.op_Inequality*
-  name: Inequality
-  href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_op_Inequality_
-  commentId: Overload:MoreNet.Cryptography.Algorithm.SymmetricName.op_Inequality
-  isSpec: "True"
-  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.Inequality
-  nameWithType: SymmetricName.Inequality
 - uid: MoreNet.Cryptography.Algorithm.SymmetricName.RC2
   name: RC2
   href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_RC2
@@ -568,6 +590,44 @@ references:
   isSpec: "True"
   fullName: MoreNet.Cryptography.Algorithm.SymmetricName.TripleDES
   nameWithType: SymmetricName.TripleDES
+- uid: MoreNet.Cryptography.Algorithm.SymmetricName.op_Equality(MoreNet.Cryptography.Algorithm.SymmetricName,MoreNet.Cryptography.Algorithm.SymmetricName)
+  name: operator ==(SymmetricName, SymmetricName)
+  href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_op_Equality_MoreNet_Cryptography_Algorithm_SymmetricName_MoreNet_Cryptography_Algorithm_SymmetricName_
+  commentId: M:MoreNet.Cryptography.Algorithm.SymmetricName.op_Equality(MoreNet.Cryptography.Algorithm.SymmetricName,MoreNet.Cryptography.Algorithm.SymmetricName)
+  name.vb: =(SymmetricName, SymmetricName)
+  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.operator ==(MoreNet.Cryptography.Algorithm.SymmetricName, MoreNet.Cryptography.Algorithm.SymmetricName)
+  fullName.vb: MoreNet.Cryptography.Algorithm.SymmetricName.=(MoreNet.Cryptography.Algorithm.SymmetricName, MoreNet.Cryptography.Algorithm.SymmetricName)
+  nameWithType: SymmetricName.operator ==(SymmetricName, SymmetricName)
+  nameWithType.vb: SymmetricName.=(SymmetricName, SymmetricName)
+- uid: MoreNet.Cryptography.Algorithm.SymmetricName.op_Equality*
+  name: operator ==
+  href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_op_Equality_
+  commentId: Overload:MoreNet.Cryptography.Algorithm.SymmetricName.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.operator ==
+  fullName.vb: MoreNet.Cryptography.Algorithm.SymmetricName.=
+  nameWithType: SymmetricName.operator ==
+  nameWithType.vb: SymmetricName.=
+- uid: MoreNet.Cryptography.Algorithm.SymmetricName.op_Inequality(MoreNet.Cryptography.Algorithm.SymmetricName,MoreNet.Cryptography.Algorithm.SymmetricName)
+  name: operator !=(SymmetricName, SymmetricName)
+  href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_op_Inequality_MoreNet_Cryptography_Algorithm_SymmetricName_MoreNet_Cryptography_Algorithm_SymmetricName_
+  commentId: M:MoreNet.Cryptography.Algorithm.SymmetricName.op_Inequality(MoreNet.Cryptography.Algorithm.SymmetricName,MoreNet.Cryptography.Algorithm.SymmetricName)
+  name.vb: <>(SymmetricName, SymmetricName)
+  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.operator !=(MoreNet.Cryptography.Algorithm.SymmetricName, MoreNet.Cryptography.Algorithm.SymmetricName)
+  fullName.vb: MoreNet.Cryptography.Algorithm.SymmetricName.<>(MoreNet.Cryptography.Algorithm.SymmetricName, MoreNet.Cryptography.Algorithm.SymmetricName)
+  nameWithType: SymmetricName.operator !=(SymmetricName, SymmetricName)
+  nameWithType.vb: SymmetricName.<>(SymmetricName, SymmetricName)
+- uid: MoreNet.Cryptography.Algorithm.SymmetricName.op_Inequality*
+  name: operator !=
+  href: api/MoreNet.Cryptography.Algorithm.SymmetricName.html#MoreNet_Cryptography_Algorithm_SymmetricName_op_Inequality_
+  commentId: Overload:MoreNet.Cryptography.Algorithm.SymmetricName.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: MoreNet.Cryptography.Algorithm.SymmetricName.operator !=
+  fullName.vb: MoreNet.Cryptography.Algorithm.SymmetricName.<>
+  nameWithType: SymmetricName.operator !=
+  nameWithType.vb: SymmetricName.<>
 - uid: MoreNet.Cryptography.Extensions
   name: MoreNet.Cryptography.Extensions
   href: api/MoreNet.Cryptography.Extensions.html
@@ -581,26 +641,32 @@ references:
   fullName: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions
   nameWithType: HashAlgorithmExtensions
 - uid: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm,System.Byte[])
-  name: ComputeHashToHex(HashAlgorithm, Byte[])
+  name: ComputeHashToHex(HashAlgorithm, byte[])
   href: api/MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_HashAlgorithmExtensions_ComputeHashToHex_System_Security_Cryptography_HashAlgorithm_System_Byte___
   commentId: M:MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm,System.Byte[])
   name.vb: ComputeHashToHex(HashAlgorithm, Byte())
-  fullName: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, System.Byte[])
-  fullName.vb: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, System.Byte())
-  nameWithType: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, Byte[])
+  fullName: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, byte[])
+  fullName.vb: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, Byte())
+  nameWithType: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, byte[])
   nameWithType.vb: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, Byte())
 - uid: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm,System.String)
-  name: ComputeHashToHex(HashAlgorithm, String)
+  name: ComputeHashToHex(HashAlgorithm, string)
   href: api/MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_HashAlgorithmExtensions_ComputeHashToHex_System_Security_Cryptography_HashAlgorithm_System_String_
   commentId: M:MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm,System.String)
-  fullName: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, System.String)
-  nameWithType: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, String)
+  name.vb: ComputeHashToHex(HashAlgorithm, String)
+  fullName: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, string)
+  fullName.vb: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, String)
+  nameWithType: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, string)
+  nameWithType.vb: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, String)
 - uid: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm,System.String,System.Text.Encoding)
-  name: ComputeHashToHex(HashAlgorithm, String, Encoding)
+  name: ComputeHashToHex(HashAlgorithm, string, Encoding)
   href: api/MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_HashAlgorithmExtensions_ComputeHashToHex_System_Security_Cryptography_HashAlgorithm_System_String_System_Text_Encoding_
   commentId: M:MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm,System.String,System.Text.Encoding)
-  fullName: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, System.String, System.Text.Encoding)
-  nameWithType: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, String, Encoding)
+  name.vb: ComputeHashToHex(HashAlgorithm, String, Encoding)
+  fullName: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, string, System.Text.Encoding)
+  fullName.vb: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex(System.Security.Cryptography.HashAlgorithm, String, System.Text.Encoding)
+  nameWithType: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, string, Encoding)
+  nameWithType.vb: HashAlgorithmExtensions.ComputeHashToHex(HashAlgorithm, String, Encoding)
 - uid: MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.ComputeHashToHex*
   name: ComputeHashToHex
   href: api/MoreNet.Cryptography.Extensions.HashAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_HashAlgorithmExtensions_ComputeHashToHex_
@@ -615,13 +681,13 @@ references:
   fullName: MoreNet.Cryptography.Extensions.RSAExtensions
   nameWithType: RSAExtensions
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunks(System.Security.Cryptography.RSA,System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
-  name: DecryptChunks(RSA, Byte[], RSAEncryptionPadding)
+  name: DecryptChunks(RSA, byte[], RSAEncryptionPadding)
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_DecryptChunks_System_Security_Cryptography_RSA_System_Byte___System_Security_Cryptography_RSAEncryptionPadding_
   commentId: M:MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunks(System.Security.Cryptography.RSA,System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
   name.vb: DecryptChunks(RSA, Byte(), RSAEncryptionPadding)
-  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunks(System.Security.Cryptography.RSA, System.Byte[], System.Security.Cryptography.RSAEncryptionPadding)
-  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunks(System.Security.Cryptography.RSA, System.Byte(), System.Security.Cryptography.RSAEncryptionPadding)
-  nameWithType: RSAExtensions.DecryptChunks(RSA, Byte[], RSAEncryptionPadding)
+  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunks(System.Security.Cryptography.RSA, byte[], System.Security.Cryptography.RSAEncryptionPadding)
+  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunks(System.Security.Cryptography.RSA, Byte(), System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: RSAExtensions.DecryptChunks(RSA, byte[], RSAEncryptionPadding)
   nameWithType.vb: RSAExtensions.DecryptChunks(RSA, Byte(), RSAEncryptionPadding)
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunks*
   name: DecryptChunks
@@ -631,11 +697,14 @@ references:
   fullName: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunks
   nameWithType: RSAExtensions.DecryptChunks
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunksFromBase64(System.Security.Cryptography.RSA,System.String,System.Security.Cryptography.RSAEncryptionPadding)
-  name: DecryptChunksFromBase64(RSA, String, RSAEncryptionPadding)
+  name: DecryptChunksFromBase64(RSA, string, RSAEncryptionPadding)
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_DecryptChunksFromBase64_System_Security_Cryptography_RSA_System_String_System_Security_Cryptography_RSAEncryptionPadding_
   commentId: M:MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunksFromBase64(System.Security.Cryptography.RSA,System.String,System.Security.Cryptography.RSAEncryptionPadding)
-  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunksFromBase64(System.Security.Cryptography.RSA, System.String, System.Security.Cryptography.RSAEncryptionPadding)
-  nameWithType: RSAExtensions.DecryptChunksFromBase64(RSA, String, RSAEncryptionPadding)
+  name.vb: DecryptChunksFromBase64(RSA, String, RSAEncryptionPadding)
+  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunksFromBase64(System.Security.Cryptography.RSA, string, System.Security.Cryptography.RSAEncryptionPadding)
+  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunksFromBase64(System.Security.Cryptography.RSA, String, System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: RSAExtensions.DecryptChunksFromBase64(RSA, string, RSAEncryptionPadding)
+  nameWithType.vb: RSAExtensions.DecryptChunksFromBase64(RSA, String, RSAEncryptionPadding)
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunksFromBase64*
   name: DecryptChunksFromBase64
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_DecryptChunksFromBase64_
@@ -644,13 +713,13 @@ references:
   fullName: MoreNet.Cryptography.Extensions.RSAExtensions.DecryptChunksFromBase64
   nameWithType: RSAExtensions.DecryptChunksFromBase64
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunks(System.Security.Cryptography.RSA,System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
-  name: EncryptChunks(RSA, Byte[], RSAEncryptionPadding)
+  name: EncryptChunks(RSA, byte[], RSAEncryptionPadding)
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_EncryptChunks_System_Security_Cryptography_RSA_System_Byte___System_Security_Cryptography_RSAEncryptionPadding_
   commentId: M:MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunks(System.Security.Cryptography.RSA,System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
   name.vb: EncryptChunks(RSA, Byte(), RSAEncryptionPadding)
-  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunks(System.Security.Cryptography.RSA, System.Byte[], System.Security.Cryptography.RSAEncryptionPadding)
-  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunks(System.Security.Cryptography.RSA, System.Byte(), System.Security.Cryptography.RSAEncryptionPadding)
-  nameWithType: RSAExtensions.EncryptChunks(RSA, Byte[], RSAEncryptionPadding)
+  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunks(System.Security.Cryptography.RSA, byte[], System.Security.Cryptography.RSAEncryptionPadding)
+  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunks(System.Security.Cryptography.RSA, Byte(), System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: RSAExtensions.EncryptChunks(RSA, byte[], RSAEncryptionPadding)
   nameWithType.vb: RSAExtensions.EncryptChunks(RSA, Byte(), RSAEncryptionPadding)
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunks*
   name: EncryptChunks
@@ -660,11 +729,14 @@ references:
   fullName: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunks
   nameWithType: RSAExtensions.EncryptChunks
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunksToBase64(System.Security.Cryptography.RSA,System.String,System.Security.Cryptography.RSAEncryptionPadding)
-  name: EncryptChunksToBase64(RSA, String, RSAEncryptionPadding)
+  name: EncryptChunksToBase64(RSA, string, RSAEncryptionPadding)
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_EncryptChunksToBase64_System_Security_Cryptography_RSA_System_String_System_Security_Cryptography_RSAEncryptionPadding_
   commentId: M:MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunksToBase64(System.Security.Cryptography.RSA,System.String,System.Security.Cryptography.RSAEncryptionPadding)
-  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunksToBase64(System.Security.Cryptography.RSA, System.String, System.Security.Cryptography.RSAEncryptionPadding)
-  nameWithType: RSAExtensions.EncryptChunksToBase64(RSA, String, RSAEncryptionPadding)
+  name.vb: EncryptChunksToBase64(RSA, String, RSAEncryptionPadding)
+  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunksToBase64(System.Security.Cryptography.RSA, string, System.Security.Cryptography.RSAEncryptionPadding)
+  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunksToBase64(System.Security.Cryptography.RSA, String, System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: RSAExtensions.EncryptChunksToBase64(RSA, string, RSAEncryptionPadding)
+  nameWithType.vb: RSAExtensions.EncryptChunksToBase64(RSA, String, RSAEncryptionPadding)
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunksToBase64*
   name: EncryptChunksToBase64
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_EncryptChunksToBase64_
@@ -673,17 +745,23 @@ references:
   fullName: MoreNet.Cryptography.Extensions.RSAExtensions.EncryptChunksToBase64
   nameWithType: RSAExtensions.EncryptChunksToBase64
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA,System.String)
-  name: SignDataToBase64(RSA, String)
+  name: SignDataToBase64(RSA, string)
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_SignDataToBase64_System_Security_Cryptography_RSA_System_String_
   commentId: M:MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA,System.String)
-  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA, System.String)
-  nameWithType: RSAExtensions.SignDataToBase64(RSA, String)
+  name.vb: SignDataToBase64(RSA, String)
+  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA, string)
+  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA, String)
+  nameWithType: RSAExtensions.SignDataToBase64(RSA, string)
+  nameWithType.vb: RSAExtensions.SignDataToBase64(RSA, String)
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA,System.String,System.Text.Encoding,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
-  name: SignDataToBase64(RSA, String, Encoding, HashAlgorithmName, RSASignaturePadding)
+  name: SignDataToBase64(RSA, string, Encoding, HashAlgorithmName, RSASignaturePadding)
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_SignDataToBase64_System_Security_Cryptography_RSA_System_String_System_Text_Encoding_System_Security_Cryptography_HashAlgorithmName_System_Security_Cryptography_RSASignaturePadding_
   commentId: M:MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA,System.String,System.Text.Encoding,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
-  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA, System.String, System.Text.Encoding, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
-  nameWithType: RSAExtensions.SignDataToBase64(RSA, String, Encoding, HashAlgorithmName, RSASignaturePadding)
+  name.vb: SignDataToBase64(RSA, String, Encoding, HashAlgorithmName, RSASignaturePadding)
+  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA, string, System.Text.Encoding, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64(System.Security.Cryptography.RSA, String, System.Text.Encoding, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSAExtensions.SignDataToBase64(RSA, string, Encoding, HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSAExtensions.SignDataToBase64(RSA, String, Encoding, HashAlgorithmName, RSASignaturePadding)
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64*
   name: SignDataToBase64
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_SignDataToBase64_
@@ -692,17 +770,23 @@ references:
   fullName: MoreNet.Cryptography.Extensions.RSAExtensions.SignDataToBase64
   nameWithType: RSAExtensions.SignDataToBase64
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA,System.String,System.String)
-  name: VerifyDataFromBase64(RSA, String, String)
+  name: VerifyDataFromBase64(RSA, string, string)
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_VerifyDataFromBase64_System_Security_Cryptography_RSA_System_String_System_String_
   commentId: M:MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA,System.String,System.String)
-  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA, System.String, System.String)
-  nameWithType: RSAExtensions.VerifyDataFromBase64(RSA, String, String)
+  name.vb: VerifyDataFromBase64(RSA, String, String)
+  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA, string, string)
+  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA, String, String)
+  nameWithType: RSAExtensions.VerifyDataFromBase64(RSA, string, string)
+  nameWithType.vb: RSAExtensions.VerifyDataFromBase64(RSA, String, String)
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA,System.String,System.Text.Encoding,System.String,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
-  name: VerifyDataFromBase64(RSA, String, Encoding, String, HashAlgorithmName, RSASignaturePadding)
+  name: VerifyDataFromBase64(RSA, string, Encoding, string, HashAlgorithmName, RSASignaturePadding)
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_VerifyDataFromBase64_System_Security_Cryptography_RSA_System_String_System_Text_Encoding_System_String_System_Security_Cryptography_HashAlgorithmName_System_Security_Cryptography_RSASignaturePadding_
   commentId: M:MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA,System.String,System.Text.Encoding,System.String,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
-  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA, System.String, System.Text.Encoding, System.String, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
-  nameWithType: RSAExtensions.VerifyDataFromBase64(RSA, String, Encoding, String, HashAlgorithmName, RSASignaturePadding)
+  name.vb: VerifyDataFromBase64(RSA, String, Encoding, String, HashAlgorithmName, RSASignaturePadding)
+  fullName: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA, string, System.Text.Encoding, string, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullName.vb: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64(System.Security.Cryptography.RSA, String, System.Text.Encoding, String, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSAExtensions.VerifyDataFromBase64(RSA, string, Encoding, string, HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSAExtensions.VerifyDataFromBase64(RSA, String, Encoding, String, HashAlgorithmName, RSASignaturePadding)
 - uid: MoreNet.Cryptography.Extensions.RSAExtensions.VerifyDataFromBase64*
   name: VerifyDataFromBase64
   href: api/MoreNet.Cryptography.Extensions.RSAExtensions.html#MoreNet_Cryptography_Extensions_RSAExtensions_VerifyDataFromBase64_
@@ -736,22 +820,22 @@ references:
   fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions
   nameWithType: SymmetricAlgorithmExtensions
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm,System.Byte[])
-  name: Decrypt(SymmetricAlgorithm, Byte[])
+  name: Decrypt(SymmetricAlgorithm, byte[])
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_Decrypt_System_Security_Cryptography_SymmetricAlgorithm_System_Byte___
   commentId: M:MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm,System.Byte[])
   name.vb: Decrypt(SymmetricAlgorithm, Byte())
-  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm, System.Byte[])
-  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm, System.Byte())
-  nameWithType: SymmetricAlgorithmExtensions.Decrypt(SymmetricAlgorithm, Byte[])
+  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm, byte[])
+  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm, Byte())
+  nameWithType: SymmetricAlgorithmExtensions.Decrypt(SymmetricAlgorithm, byte[])
   nameWithType.vb: SymmetricAlgorithmExtensions.Decrypt(SymmetricAlgorithm, Byte())
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm,System.Byte[],System.Text.Encoding)
-  name: Decrypt(SymmetricAlgorithm, Byte[], Encoding)
+  name: Decrypt(SymmetricAlgorithm, byte[], Encoding)
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_Decrypt_System_Security_Cryptography_SymmetricAlgorithm_System_Byte___System_Text_Encoding_
   commentId: M:MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm,System.Byte[],System.Text.Encoding)
   name.vb: Decrypt(SymmetricAlgorithm, Byte(), Encoding)
-  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm, System.Byte[], System.Text.Encoding)
-  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm, System.Byte(), System.Text.Encoding)
-  nameWithType: SymmetricAlgorithmExtensions.Decrypt(SymmetricAlgorithm, Byte[], Encoding)
+  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm, byte[], System.Text.Encoding)
+  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt(System.Security.Cryptography.SymmetricAlgorithm, Byte(), System.Text.Encoding)
+  nameWithType: SymmetricAlgorithmExtensions.Decrypt(SymmetricAlgorithm, byte[], Encoding)
   nameWithType.vb: SymmetricAlgorithmExtensions.Decrypt(SymmetricAlgorithm, Byte(), Encoding)
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt*
   name: Decrypt
@@ -761,17 +845,23 @@ references:
   fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Decrypt
   nameWithType: SymmetricAlgorithmExtensions.Decrypt
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm,System.String)
-  name: DecryptFromBase64(SymmetricAlgorithm, String)
+  name: DecryptFromBase64(SymmetricAlgorithm, string)
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_DecryptFromBase64_System_Security_Cryptography_SymmetricAlgorithm_System_String_
   commentId: M:MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm,System.String)
-  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm, System.String)
-  nameWithType: SymmetricAlgorithmExtensions.DecryptFromBase64(SymmetricAlgorithm, String)
+  name.vb: DecryptFromBase64(SymmetricAlgorithm, String)
+  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm, string)
+  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm, String)
+  nameWithType: SymmetricAlgorithmExtensions.DecryptFromBase64(SymmetricAlgorithm, string)
+  nameWithType.vb: SymmetricAlgorithmExtensions.DecryptFromBase64(SymmetricAlgorithm, String)
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm,System.String,System.Text.Encoding)
-  name: DecryptFromBase64(SymmetricAlgorithm, String, Encoding)
+  name: DecryptFromBase64(SymmetricAlgorithm, string, Encoding)
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_DecryptFromBase64_System_Security_Cryptography_SymmetricAlgorithm_System_String_System_Text_Encoding_
   commentId: M:MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm,System.String,System.Text.Encoding)
-  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm, System.String, System.Text.Encoding)
-  nameWithType: SymmetricAlgorithmExtensions.DecryptFromBase64(SymmetricAlgorithm, String, Encoding)
+  name.vb: DecryptFromBase64(SymmetricAlgorithm, String, Encoding)
+  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm, string, System.Text.Encoding)
+  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64(System.Security.Cryptography.SymmetricAlgorithm, String, System.Text.Encoding)
+  nameWithType: SymmetricAlgorithmExtensions.DecryptFromBase64(SymmetricAlgorithm, string, Encoding)
+  nameWithType.vb: SymmetricAlgorithmExtensions.DecryptFromBase64(SymmetricAlgorithm, String, Encoding)
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64*
   name: DecryptFromBase64
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_DecryptFromBase64_
@@ -780,13 +870,13 @@ references:
   fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.DecryptFromBase64
   nameWithType: SymmetricAlgorithmExtensions.DecryptFromBase64
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Encrypt(System.Security.Cryptography.SymmetricAlgorithm,System.Byte[])
-  name: Encrypt(SymmetricAlgorithm, Byte[])
+  name: Encrypt(SymmetricAlgorithm, byte[])
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_Encrypt_System_Security_Cryptography_SymmetricAlgorithm_System_Byte___
   commentId: M:MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Encrypt(System.Security.Cryptography.SymmetricAlgorithm,System.Byte[])
   name.vb: Encrypt(SymmetricAlgorithm, Byte())
-  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Encrypt(System.Security.Cryptography.SymmetricAlgorithm, System.Byte[])
-  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Encrypt(System.Security.Cryptography.SymmetricAlgorithm, System.Byte())
-  nameWithType: SymmetricAlgorithmExtensions.Encrypt(SymmetricAlgorithm, Byte[])
+  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Encrypt(System.Security.Cryptography.SymmetricAlgorithm, byte[])
+  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Encrypt(System.Security.Cryptography.SymmetricAlgorithm, Byte())
+  nameWithType: SymmetricAlgorithmExtensions.Encrypt(SymmetricAlgorithm, byte[])
   nameWithType.vb: SymmetricAlgorithmExtensions.Encrypt(SymmetricAlgorithm, Byte())
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Encrypt*
   name: Encrypt
@@ -796,26 +886,32 @@ references:
   fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.Encrypt
   nameWithType: SymmetricAlgorithmExtensions.Encrypt
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm,System.Byte[])
-  name: EncryptToBase64(SymmetricAlgorithm, Byte[])
+  name: EncryptToBase64(SymmetricAlgorithm, byte[])
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_EncryptToBase64_System_Security_Cryptography_SymmetricAlgorithm_System_Byte___
   commentId: M:MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm,System.Byte[])
   name.vb: EncryptToBase64(SymmetricAlgorithm, Byte())
-  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, System.Byte[])
-  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, System.Byte())
-  nameWithType: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, Byte[])
+  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, byte[])
+  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, Byte())
+  nameWithType: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, byte[])
   nameWithType.vb: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, Byte())
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm,System.String)
-  name: EncryptToBase64(SymmetricAlgorithm, String)
+  name: EncryptToBase64(SymmetricAlgorithm, string)
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_EncryptToBase64_System_Security_Cryptography_SymmetricAlgorithm_System_String_
   commentId: M:MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm,System.String)
-  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, System.String)
-  nameWithType: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, String)
+  name.vb: EncryptToBase64(SymmetricAlgorithm, String)
+  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, string)
+  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, String)
+  nameWithType: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, string)
+  nameWithType.vb: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, String)
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm,System.String,System.Text.Encoding)
-  name: EncryptToBase64(SymmetricAlgorithm, String, Encoding)
+  name: EncryptToBase64(SymmetricAlgorithm, string, Encoding)
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_EncryptToBase64_System_Security_Cryptography_SymmetricAlgorithm_System_String_System_Text_Encoding_
   commentId: M:MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm,System.String,System.Text.Encoding)
-  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, System.String, System.Text.Encoding)
-  nameWithType: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, String, Encoding)
+  name.vb: EncryptToBase64(SymmetricAlgorithm, String, Encoding)
+  fullName: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, string, System.Text.Encoding)
+  fullName.vb: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64(System.Security.Cryptography.SymmetricAlgorithm, String, System.Text.Encoding)
+  nameWithType: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, string, Encoding)
+  nameWithType.vb: SymmetricAlgorithmExtensions.EncryptToBase64(SymmetricAlgorithm, String, Encoding)
 - uid: MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.EncryptToBase64*
   name: EncryptToBase64
   href: api/MoreNet.Cryptography.Extensions.SymmetricAlgorithmExtensions.html#MoreNet_Cryptography_Extensions_SymmetricAlgorithmExtensions_EncryptToBase64_
@@ -830,17 +926,23 @@ references:
   fullName: MoreNet.Cryptography.Extensions.X509Certificate2Extensions
   nameWithType: X509Certificate2Extensions
 - uid: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Reflection.Assembly,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-  name: Import(X509Certificate2, Assembly, String, X509KeyStorageFlags)
+  name: Import(X509Certificate2, Assembly, string, X509KeyStorageFlags)
   href: api/MoreNet.Cryptography.Extensions.X509Certificate2Extensions.html#MoreNet_Cryptography_Extensions_X509Certificate2Extensions_Import_System_Security_Cryptography_X509Certificates_X509Certificate2_System_Reflection_Assembly_System_String_System_Security_Cryptography_X509Certificates_X509KeyStorageFlags_
   commentId: M:MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Reflection.Assembly,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-  fullName: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2, System.Reflection.Assembly, System.String, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-  nameWithType: X509Certificate2Extensions.Import(X509Certificate2, Assembly, String, X509KeyStorageFlags)
+  name.vb: Import(X509Certificate2, Assembly, String, X509KeyStorageFlags)
+  fullName: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2, System.Reflection.Assembly, string, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  fullName.vb: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2, System.Reflection.Assembly, String, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  nameWithType: X509Certificate2Extensions.Import(X509Certificate2, Assembly, string, X509KeyStorageFlags)
+  nameWithType.vb: X509Certificate2Extensions.Import(X509Certificate2, Assembly, String, X509KeyStorageFlags)
 - uid: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Reflection.Assembly,System.String,System.String)
-  name: Import(X509Certificate2, Assembly, String, String)
+  name: Import(X509Certificate2, Assembly, string, string)
   href: api/MoreNet.Cryptography.Extensions.X509Certificate2Extensions.html#MoreNet_Cryptography_Extensions_X509Certificate2Extensions_Import_System_Security_Cryptography_X509Certificates_X509Certificate2_System_Reflection_Assembly_System_String_System_String_
   commentId: M:MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Reflection.Assembly,System.String,System.String)
-  fullName: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2, System.Reflection.Assembly, System.String, System.String)
-  nameWithType: X509Certificate2Extensions.Import(X509Certificate2, Assembly, String, String)
+  name.vb: Import(X509Certificate2, Assembly, String, String)
+  fullName: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2, System.Reflection.Assembly, string, string)
+  fullName.vb: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import(System.Security.Cryptography.X509Certificates.X509Certificate2, System.Reflection.Assembly, String, String)
+  nameWithType: X509Certificate2Extensions.Import(X509Certificate2, Assembly, string, string)
+  nameWithType.vb: X509Certificate2Extensions.Import(X509Certificate2, Assembly, String, String)
 - uid: MoreNet.Cryptography.Extensions.X509Certificate2Extensions.Import*
   name: Import
   href: api/MoreNet.Cryptography.Extensions.X509Certificate2Extensions.html#MoreNet_Cryptography_Extensions_X509Certificate2Extensions_Import_
@@ -855,26 +957,32 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter
   nameWithType: ICryptoAdapter
 - uid: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.Byte[])
-  name: ComputeHashToHex(HashName, Byte[])
+  name: ComputeHashToHex(HashName, byte[])
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_Byte___
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.Byte[])
   name.vb: ComputeHashToHex(HashName, Byte())
-  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, System.Byte[])
-  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, System.Byte())
-  nameWithType: ICryptoAdapter.ComputeHashToHex(HashName, Byte[])
+  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, byte[])
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, Byte())
+  nameWithType: ICryptoAdapter.ComputeHashToHex(HashName, byte[])
   nameWithType.vb: ICryptoAdapter.ComputeHashToHex(HashName, Byte())
 - uid: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.String)
-  name: ComputeHashToHex(HashName, String)
+  name: ComputeHashToHex(HashName, string)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_String_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.String)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, System.String)
-  nameWithType: ICryptoAdapter.ComputeHashToHex(HashName, String)
+  name.vb: ComputeHashToHex(HashName, String)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, string)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, String)
+  nameWithType: ICryptoAdapter.ComputeHashToHex(HashName, string)
+  nameWithType.vb: ICryptoAdapter.ComputeHashToHex(HashName, String)
 - uid: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.String,System.Text.Encoding)
-  name: ComputeHashToHex(HashName, String, Encoding)
+  name: ComputeHashToHex(HashName, string, Encoding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_MoreNet_Cryptography_Algorithm_HashName_System_String_System_Text_Encoding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName,System.String,System.Text.Encoding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, System.String, System.Text.Encoding)
-  nameWithType: ICryptoAdapter.ComputeHashToHex(HashName, String, Encoding)
+  name.vb: ComputeHashToHex(HashName, String, Encoding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, string, System.Text.Encoding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex(MoreNet.Cryptography.Algorithm.HashName, String, System.Text.Encoding)
+  nameWithType: ICryptoAdapter.ComputeHashToHex(HashName, string, Encoding)
+  nameWithType.vb: ICryptoAdapter.ComputeHashToHex(HashName, String, Encoding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex*
   name: ComputeHashToHex
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_ComputeHashToHex_
@@ -883,20 +991,23 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeHashToHex
   nameWithType: ICryptoAdapter.ComputeHashToHex
 - uid: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName,System.Byte[],System.Byte[])
-  name: ComputeKeyedHashToHex(KeyedHashName, Byte[], Byte[])
+  name: ComputeKeyedHashToHex(KeyedHashName, byte[], byte[])
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_MoreNet_Cryptography_Algorithm_KeyedHashName_System_Byte___System_Byte___
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName,System.Byte[],System.Byte[])
   name.vb: ComputeKeyedHashToHex(KeyedHashName, Byte(), Byte())
-  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName, System.Byte[], System.Byte[])
-  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName, System.Byte(), System.Byte())
-  nameWithType: ICryptoAdapter.ComputeKeyedHashToHex(KeyedHashName, Byte[], Byte[])
+  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName, byte[], byte[])
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName, Byte(), Byte())
+  nameWithType: ICryptoAdapter.ComputeKeyedHashToHex(KeyedHashName, byte[], byte[])
   nameWithType.vb: ICryptoAdapter.ComputeKeyedHashToHex(KeyedHashName, Byte(), Byte())
 - uid: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName,System.String,System.String)
-  name: ComputeKeyedHashToHex(KeyedHashName, String, String)
+  name: ComputeKeyedHashToHex(KeyedHashName, string, string)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_MoreNet_Cryptography_Algorithm_KeyedHashName_System_String_System_String_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName,System.String,System.String)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName, System.String, System.String)
-  nameWithType: ICryptoAdapter.ComputeKeyedHashToHex(KeyedHashName, String, String)
+  name.vb: ComputeKeyedHashToHex(KeyedHashName, String, String)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName, string, string)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex(MoreNet.Cryptography.Algorithm.KeyedHashName, String, String)
+  nameWithType: ICryptoAdapter.ComputeKeyedHashToHex(KeyedHashName, string, string)
+  nameWithType.vb: ICryptoAdapter.ComputeKeyedHashToHex(KeyedHashName, String, String)
 - uid: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex*
   name: ComputeKeyedHashToHex
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_ComputeKeyedHashToHex_
@@ -905,22 +1016,22 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.ComputeKeyedHashToHex
   nameWithType: ICryptoAdapter.ComputeKeyedHashToHex
 - uid: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])
-  name: Decrypt(SymmetricName, Byte[])
+  name: Decrypt(SymmetricName, byte[])
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_Decrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])
   name.vb: Decrypt(SymmetricName, Byte())
-  fullName: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName, System.Byte[])
-  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName, System.Byte())
-  nameWithType: ICryptoAdapter.Decrypt(SymmetricName, Byte[])
+  fullName: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName, byte[])
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName, Byte())
+  nameWithType: ICryptoAdapter.Decrypt(SymmetricName, byte[])
   nameWithType.vb: ICryptoAdapter.Decrypt(SymmetricName, Byte())
 - uid: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[],System.Text.Encoding)
-  name: Decrypt(SymmetricName, Byte[], Encoding)
+  name: Decrypt(SymmetricName, byte[], Encoding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_Decrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___System_Text_Encoding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[],System.Text.Encoding)
   name.vb: Decrypt(SymmetricName, Byte(), Encoding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName, System.Byte[], System.Text.Encoding)
-  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName, System.Byte(), System.Text.Encoding)
-  nameWithType: ICryptoAdapter.Decrypt(SymmetricName, Byte[], Encoding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName, byte[], System.Text.Encoding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.Decrypt(MoreNet.Cryptography.Algorithm.SymmetricName, Byte(), System.Text.Encoding)
+  nameWithType: ICryptoAdapter.Decrypt(SymmetricName, byte[], Encoding)
   nameWithType.vb: ICryptoAdapter.Decrypt(SymmetricName, Byte(), Encoding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.Decrypt*
   name: Decrypt
@@ -930,17 +1041,23 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.Decrypt
   nameWithType: ICryptoAdapter.Decrypt
 - uid: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String)
-  name: DecryptFromBase64(SymmetricName, String)
+  name: DecryptFromBase64(SymmetricName, string)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName, System.String)
-  nameWithType: ICryptoAdapter.DecryptFromBase64(SymmetricName, String)
+  name.vb: DecryptFromBase64(SymmetricName, String)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName, string)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName, String)
+  nameWithType: ICryptoAdapter.DecryptFromBase64(SymmetricName, string)
+  nameWithType.vb: ICryptoAdapter.DecryptFromBase64(SymmetricName, String)
 - uid: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String,System.Text.Encoding)
-  name: DecryptFromBase64(SymmetricName, String, Encoding)
+  name: DecryptFromBase64(SymmetricName, string, Encoding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_System_Text_Encoding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String,System.Text.Encoding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName, System.String, System.Text.Encoding)
-  nameWithType: ICryptoAdapter.DecryptFromBase64(SymmetricName, String, Encoding)
+  name.vb: DecryptFromBase64(SymmetricName, String, Encoding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName, string, System.Text.Encoding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64(MoreNet.Cryptography.Algorithm.SymmetricName, String, System.Text.Encoding)
+  nameWithType: ICryptoAdapter.DecryptFromBase64(SymmetricName, string, Encoding)
+  nameWithType.vb: ICryptoAdapter.DecryptFromBase64(SymmetricName, String, Encoding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64*
   name: DecryptFromBase64
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_DecryptFromBase64_
@@ -949,13 +1066,13 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.DecryptFromBase64
   nameWithType: ICryptoAdapter.DecryptFromBase64
 - uid: MoreNet.Cryptography.ICryptoAdapter.Encrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])
-  name: Encrypt(SymmetricName, Byte[])
+  name: Encrypt(SymmetricName, byte[])
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_Encrypt_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.Encrypt(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])
   name.vb: Encrypt(SymmetricName, Byte())
-  fullName: MoreNet.Cryptography.ICryptoAdapter.Encrypt(MoreNet.Cryptography.Algorithm.SymmetricName, System.Byte[])
-  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.Encrypt(MoreNet.Cryptography.Algorithm.SymmetricName, System.Byte())
-  nameWithType: ICryptoAdapter.Encrypt(SymmetricName, Byte[])
+  fullName: MoreNet.Cryptography.ICryptoAdapter.Encrypt(MoreNet.Cryptography.Algorithm.SymmetricName, byte[])
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.Encrypt(MoreNet.Cryptography.Algorithm.SymmetricName, Byte())
+  nameWithType: ICryptoAdapter.Encrypt(SymmetricName, byte[])
   nameWithType.vb: ICryptoAdapter.Encrypt(SymmetricName, Byte())
 - uid: MoreNet.Cryptography.ICryptoAdapter.Encrypt*
   name: Encrypt
@@ -965,26 +1082,32 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.Encrypt
   nameWithType: ICryptoAdapter.Encrypt
 - uid: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])
-  name: EncryptToBase64(SymmetricName, Byte[])
+  name: EncryptToBase64(SymmetricName, byte[])
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_Byte___
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.Byte[])
   name.vb: EncryptToBase64(SymmetricName, Byte())
-  fullName: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, System.Byte[])
-  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, System.Byte())
-  nameWithType: ICryptoAdapter.EncryptToBase64(SymmetricName, Byte[])
+  fullName: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, byte[])
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, Byte())
+  nameWithType: ICryptoAdapter.EncryptToBase64(SymmetricName, byte[])
   nameWithType.vb: ICryptoAdapter.EncryptToBase64(SymmetricName, Byte())
 - uid: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String)
-  name: EncryptToBase64(SymmetricName, String)
+  name: EncryptToBase64(SymmetricName, string)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, System.String)
-  nameWithType: ICryptoAdapter.EncryptToBase64(SymmetricName, String)
+  name.vb: EncryptToBase64(SymmetricName, String)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, string)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, String)
+  nameWithType: ICryptoAdapter.EncryptToBase64(SymmetricName, string)
+  nameWithType.vb: ICryptoAdapter.EncryptToBase64(SymmetricName, String)
 - uid: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String,System.Text.Encoding)
-  name: EncryptToBase64(SymmetricName, String, Encoding)
+  name: EncryptToBase64(SymmetricName, string, Encoding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_MoreNet_Cryptography_Algorithm_SymmetricName_System_String_System_Text_Encoding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName,System.String,System.Text.Encoding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, System.String, System.Text.Encoding)
-  nameWithType: ICryptoAdapter.EncryptToBase64(SymmetricName, String, Encoding)
+  name.vb: EncryptToBase64(SymmetricName, String, Encoding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, string, System.Text.Encoding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64(MoreNet.Cryptography.Algorithm.SymmetricName, String, System.Text.Encoding)
+  nameWithType: ICryptoAdapter.EncryptToBase64(SymmetricName, string, Encoding)
+  nameWithType.vb: ICryptoAdapter.EncryptToBase64(SymmetricName, String, Encoding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64*
   name: EncryptToBase64
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_EncryptToBase64_
@@ -993,13 +1116,13 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.EncryptToBase64
   nameWithType: ICryptoAdapter.EncryptToBase64
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
-  name: RSADecryptChunks(Byte[], RSAEncryptionPadding)
+  name: RSADecryptChunks(byte[], RSAEncryptionPadding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunks_System_Byte___System_Security_Cryptography_RSAEncryptionPadding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
   name.vb: RSADecryptChunks(Byte(), RSAEncryptionPadding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks(System.Byte[], System.Security.Cryptography.RSAEncryptionPadding)
-  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks(System.Byte(), System.Security.Cryptography.RSAEncryptionPadding)
-  nameWithType: ICryptoAdapter.RSADecryptChunks(Byte[], RSAEncryptionPadding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks(byte[], System.Security.Cryptography.RSAEncryptionPadding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks(Byte(), System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: ICryptoAdapter.RSADecryptChunks(byte[], RSAEncryptionPadding)
   nameWithType.vb: ICryptoAdapter.RSADecryptChunks(Byte(), RSAEncryptionPadding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks*
   name: RSADecryptChunks
@@ -1009,11 +1132,14 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunks
   nameWithType: ICryptoAdapter.RSADecryptChunks
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64(System.String,System.Security.Cryptography.RSAEncryptionPadding)
-  name: RSADecryptChunksFromBase64(String, RSAEncryptionPadding)
+  name: RSADecryptChunksFromBase64(string, RSAEncryptionPadding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunksFromBase64_System_String_System_Security_Cryptography_RSAEncryptionPadding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64(System.String,System.Security.Cryptography.RSAEncryptionPadding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64(System.String, System.Security.Cryptography.RSAEncryptionPadding)
-  nameWithType: ICryptoAdapter.RSADecryptChunksFromBase64(String, RSAEncryptionPadding)
+  name.vb: RSADecryptChunksFromBase64(String, RSAEncryptionPadding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64(string, System.Security.Cryptography.RSAEncryptionPadding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64(String, System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: ICryptoAdapter.RSADecryptChunksFromBase64(string, RSAEncryptionPadding)
+  nameWithType.vb: ICryptoAdapter.RSADecryptChunksFromBase64(String, RSAEncryptionPadding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64*
   name: RSADecryptChunksFromBase64
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSADecryptChunksFromBase64_
@@ -1022,13 +1148,13 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.RSADecryptChunksFromBase64
   nameWithType: ICryptoAdapter.RSADecryptChunksFromBase64
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
-  name: RSAEncryptChunks(Byte[], RSAEncryptionPadding)
+  name: RSAEncryptChunks(byte[], RSAEncryptionPadding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunks_System_Byte___System_Security_Cryptography_RSAEncryptionPadding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
   name.vb: RSAEncryptChunks(Byte(), RSAEncryptionPadding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks(System.Byte[], System.Security.Cryptography.RSAEncryptionPadding)
-  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks(System.Byte(), System.Security.Cryptography.RSAEncryptionPadding)
-  nameWithType: ICryptoAdapter.RSAEncryptChunks(Byte[], RSAEncryptionPadding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks(byte[], System.Security.Cryptography.RSAEncryptionPadding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks(Byte(), System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: ICryptoAdapter.RSAEncryptChunks(byte[], RSAEncryptionPadding)
   nameWithType.vb: ICryptoAdapter.RSAEncryptChunks(Byte(), RSAEncryptionPadding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks*
   name: RSAEncryptChunks
@@ -1038,11 +1164,14 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunks
   nameWithType: ICryptoAdapter.RSAEncryptChunks
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64(System.String,System.Security.Cryptography.RSAEncryptionPadding)
-  name: RSAEncryptChunksToBase64(String, RSAEncryptionPadding)
+  name: RSAEncryptChunksToBase64(string, RSAEncryptionPadding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunksToBase64_System_String_System_Security_Cryptography_RSAEncryptionPadding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64(System.String,System.Security.Cryptography.RSAEncryptionPadding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64(System.String, System.Security.Cryptography.RSAEncryptionPadding)
-  nameWithType: ICryptoAdapter.RSAEncryptChunksToBase64(String, RSAEncryptionPadding)
+  name.vb: RSAEncryptChunksToBase64(String, RSAEncryptionPadding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64(string, System.Security.Cryptography.RSAEncryptionPadding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64(String, System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: ICryptoAdapter.RSAEncryptChunksToBase64(string, RSAEncryptionPadding)
+  nameWithType.vb: ICryptoAdapter.RSAEncryptChunksToBase64(String, RSAEncryptionPadding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64*
   name: RSAEncryptChunksToBase64
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSAEncryptChunksToBase64_
@@ -1051,17 +1180,23 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.RSAEncryptChunksToBase64
   nameWithType: ICryptoAdapter.RSAEncryptChunksToBase64
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String)
-  name: RSASignDataToBase64(String)
+  name: RSASignDataToBase64(string)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_System_String_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String)
-  nameWithType: ICryptoAdapter.RSASignDataToBase64(String)
+  name.vb: RSASignDataToBase64(String)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(string)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(String)
+  nameWithType: ICryptoAdapter.RSASignDataToBase64(string)
+  nameWithType.vb: ICryptoAdapter.RSASignDataToBase64(String)
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String,System.Text.Encoding,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
-  name: RSASignDataToBase64(String, Encoding, HashAlgorithmName, RSASignaturePadding)
+  name: RSASignDataToBase64(string, Encoding, HashAlgorithmName, RSASignaturePadding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_System_String_System_Text_Encoding_System_Security_Cryptography_HashAlgorithmName_System_Security_Cryptography_RSASignaturePadding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String,System.Text.Encoding,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(System.String, System.Text.Encoding, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
-  nameWithType: ICryptoAdapter.RSASignDataToBase64(String, Encoding, HashAlgorithmName, RSASignaturePadding)
+  name.vb: RSASignDataToBase64(String, Encoding, HashAlgorithmName, RSASignaturePadding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(string, System.Text.Encoding, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64(String, System.Text.Encoding, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: ICryptoAdapter.RSASignDataToBase64(string, Encoding, HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: ICryptoAdapter.RSASignDataToBase64(String, Encoding, HashAlgorithmName, RSASignaturePadding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64*
   name: RSASignDataToBase64
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSASignDataToBase64_
@@ -1070,17 +1205,23 @@ references:
   fullName: MoreNet.Cryptography.ICryptoAdapter.RSASignDataToBase64
   nameWithType: ICryptoAdapter.RSASignDataToBase64
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String,System.String)
-  name: RSAVerifyDataFromBase64(String, String)
+  name: RSAVerifyDataFromBase64(string, string)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_System_String_System_String_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String,System.String)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String, System.String)
-  nameWithType: ICryptoAdapter.RSAVerifyDataFromBase64(String, String)
+  name.vb: RSAVerifyDataFromBase64(String, String)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(string, string)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(String, String)
+  nameWithType: ICryptoAdapter.RSAVerifyDataFromBase64(string, string)
+  nameWithType.vb: ICryptoAdapter.RSAVerifyDataFromBase64(String, String)
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String,System.Text.Encoding,System.String,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
-  name: RSAVerifyDataFromBase64(String, Encoding, String, HashAlgorithmName, RSASignaturePadding)
+  name: RSAVerifyDataFromBase64(string, Encoding, string, HashAlgorithmName, RSASignaturePadding)
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_System_String_System_Text_Encoding_System_String_System_Security_Cryptography_HashAlgorithmName_System_Security_Cryptography_RSASignaturePadding_
   commentId: M:MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String,System.Text.Encoding,System.String,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
-  fullName: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(System.String, System.Text.Encoding, System.String, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
-  nameWithType: ICryptoAdapter.RSAVerifyDataFromBase64(String, Encoding, String, HashAlgorithmName, RSASignaturePadding)
+  name.vb: RSAVerifyDataFromBase64(String, Encoding, String, HashAlgorithmName, RSASignaturePadding)
+  fullName: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(string, System.Text.Encoding, string, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullName.vb: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64(String, System.Text.Encoding, String, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: ICryptoAdapter.RSAVerifyDataFromBase64(string, Encoding, string, HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: ICryptoAdapter.RSAVerifyDataFromBase64(String, Encoding, String, HashAlgorithmName, RSASignaturePadding)
 - uid: MoreNet.Cryptography.ICryptoAdapter.RSAVerifyDataFromBase64*
   name: RSAVerifyDataFromBase64
   href: api/MoreNet.Cryptography.ICryptoAdapter.html#MoreNet_Cryptography_ICryptoAdapter_RSAVerifyDataFromBase64_
@@ -1095,11 +1236,14 @@ references:
   fullName: MoreNet.Cryptography.IRandomValueGenerator
   nameWithType: IRandomValueGenerator
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetAlphabets(System.Int32)
-  name: GetAlphabets(Int32)
+  name: GetAlphabets(int)
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetAlphabets_System_Int32_
   commentId: M:MoreNet.Cryptography.IRandomValueGenerator.GetAlphabets(System.Int32)
-  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetAlphabets(System.Int32)
-  nameWithType: IRandomValueGenerator.GetAlphabets(Int32)
+  name.vb: GetAlphabets(Integer)
+  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetAlphabets(int)
+  fullName.vb: MoreNet.Cryptography.IRandomValueGenerator.GetAlphabets(Integer)
+  nameWithType: IRandomValueGenerator.GetAlphabets(int)
+  nameWithType.vb: IRandomValueGenerator.GetAlphabets(Integer)
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetAlphabets*
   name: GetAlphabets
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetAlphabets_
@@ -1108,11 +1252,14 @@ references:
   fullName: MoreNet.Cryptography.IRandomValueGenerator.GetAlphabets
   nameWithType: IRandomValueGenerator.GetAlphabets
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetAlphanumerics(System.Int32)
-  name: GetAlphanumerics(Int32)
+  name: GetAlphanumerics(int)
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetAlphanumerics_System_Int32_
   commentId: M:MoreNet.Cryptography.IRandomValueGenerator.GetAlphanumerics(System.Int32)
-  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetAlphanumerics(System.Int32)
-  nameWithType: IRandomValueGenerator.GetAlphanumerics(Int32)
+  name.vb: GetAlphanumerics(Integer)
+  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetAlphanumerics(int)
+  fullName.vb: MoreNet.Cryptography.IRandomValueGenerator.GetAlphanumerics(Integer)
+  nameWithType: IRandomValueGenerator.GetAlphanumerics(int)
+  nameWithType.vb: IRandomValueGenerator.GetAlphanumerics(Integer)
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetAlphanumerics*
   name: GetAlphanumerics
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetAlphanumerics_
@@ -1121,11 +1268,14 @@ references:
   fullName: MoreNet.Cryptography.IRandomValueGenerator.GetAlphanumerics
   nameWithType: IRandomValueGenerator.GetAlphanumerics
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetDigits(System.Int32)
-  name: GetDigits(Int32)
+  name: GetDigits(int)
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetDigits_System_Int32_
   commentId: M:MoreNet.Cryptography.IRandomValueGenerator.GetDigits(System.Int32)
-  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetDigits(System.Int32)
-  nameWithType: IRandomValueGenerator.GetDigits(Int32)
+  name.vb: GetDigits(Integer)
+  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetDigits(int)
+  fullName.vb: MoreNet.Cryptography.IRandomValueGenerator.GetDigits(Integer)
+  nameWithType: IRandomValueGenerator.GetDigits(int)
+  nameWithType.vb: IRandomValueGenerator.GetDigits(Integer)
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetDigits*
   name: GetDigits
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetDigits_
@@ -1140,11 +1290,14 @@ references:
   fullName: MoreNet.Cryptography.IRandomValueGenerator.GetInt()
   nameWithType: IRandomValueGenerator.GetInt()
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetInt(System.Int32,System.Int32)
-  name: GetInt(Int32, Int32)
+  name: GetInt(int, int)
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetInt_System_Int32_System_Int32_
   commentId: M:MoreNet.Cryptography.IRandomValueGenerator.GetInt(System.Int32,System.Int32)
-  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetInt(System.Int32, System.Int32)
-  nameWithType: IRandomValueGenerator.GetInt(Int32, Int32)
+  name.vb: GetInt(Integer, Integer)
+  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetInt(int, int)
+  fullName.vb: MoreNet.Cryptography.IRandomValueGenerator.GetInt(Integer, Integer)
+  nameWithType: IRandomValueGenerator.GetInt(int, int)
+  nameWithType.vb: IRandomValueGenerator.GetInt(Integer, Integer)
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetInt*
   name: GetInt
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetInt_
@@ -1153,11 +1306,14 @@ references:
   fullName: MoreNet.Cryptography.IRandomValueGenerator.GetInt
   nameWithType: IRandomValueGenerator.GetInt
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetString(System.Int32,System.String)
-  name: GetString(Int32, String)
+  name: GetString(int, string)
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetString_System_Int32_System_String_
   commentId: M:MoreNet.Cryptography.IRandomValueGenerator.GetString(System.Int32,System.String)
-  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetString(System.Int32, System.String)
-  nameWithType: IRandomValueGenerator.GetString(Int32, String)
+  name.vb: GetString(Integer, String)
+  fullName: MoreNet.Cryptography.IRandomValueGenerator.GetString(int, string)
+  fullName.vb: MoreNet.Cryptography.IRandomValueGenerator.GetString(Integer, String)
+  nameWithType: IRandomValueGenerator.GetString(int, string)
+  nameWithType.vb: IRandomValueGenerator.GetString(Integer, String)
 - uid: MoreNet.Cryptography.IRandomValueGenerator.GetString*
   name: GetString
   href: api/MoreNet.Cryptography.IRandomValueGenerator.html#MoreNet_Cryptography_IRandomValueGenerator_GetString_
@@ -1172,11 +1328,14 @@ references:
   fullName: MoreNet.Cryptography.RSAKeyFormatDetector
   nameWithType: RSAKeyFormatDetector
 - uid: MoreNet.Cryptography.RSAKeyFormatDetector.DetectPrivateKeyFormat(System.String)
-  name: DetectPrivateKeyFormat(String)
+  name: DetectPrivateKeyFormat(string)
   href: api/MoreNet.Cryptography.RSAKeyFormatDetector.html#MoreNet_Cryptography_RSAKeyFormatDetector_DetectPrivateKeyFormat_System_String_
   commentId: M:MoreNet.Cryptography.RSAKeyFormatDetector.DetectPrivateKeyFormat(System.String)
-  fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectPrivateKeyFormat(System.String)
-  nameWithType: RSAKeyFormatDetector.DetectPrivateKeyFormat(String)
+  name.vb: DetectPrivateKeyFormat(String)
+  fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectPrivateKeyFormat(string)
+  fullName.vb: MoreNet.Cryptography.RSAKeyFormatDetector.DetectPrivateKeyFormat(String)
+  nameWithType: RSAKeyFormatDetector.DetectPrivateKeyFormat(string)
+  nameWithType.vb: RSAKeyFormatDetector.DetectPrivateKeyFormat(String)
 - uid: MoreNet.Cryptography.RSAKeyFormatDetector.DetectPrivateKeyFormat*
   name: DetectPrivateKeyFormat
   href: api/MoreNet.Cryptography.RSAKeyFormatDetector.html#MoreNet_Cryptography_RSAKeyFormatDetector_DetectPrivateKeyFormat_
@@ -1185,11 +1344,14 @@ references:
   fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectPrivateKeyFormat
   nameWithType: RSAKeyFormatDetector.DetectPrivateKeyFormat
 - uid: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(System.String)
-  name: DetectRSAPublicKeyForamt(String)
+  name: DetectRSAPublicKeyForamt(string)
   href: api/MoreNet.Cryptography.RSAKeyFormatDetector.html#MoreNet_Cryptography_RSAKeyFormatDetector_DetectRSAPublicKeyForamt_System_String_
   commentId: M:MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(System.String)
-  fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(System.String)
-  nameWithType: RSAKeyFormatDetector.DetectRSAPublicKeyForamt(String)
+  name.vb: DetectRSAPublicKeyForamt(String)
+  fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(string)
+  fullName.vb: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(String)
+  nameWithType: RSAKeyFormatDetector.DetectRSAPublicKeyForamt(string)
+  nameWithType.vb: RSAKeyFormatDetector.DetectRSAPublicKeyForamt(String)
 - uid: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt*
   name: DetectRSAPublicKeyForamt
   href: api/MoreNet.Cryptography.RSAKeyFormatDetector.html#MoreNet_Cryptography_RSAKeyFormatDetector_DetectRSAPublicKeyForamt_

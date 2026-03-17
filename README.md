@@ -118,3 +118,7 @@ public class MyClass
 ## Notes
 
 - **Easy to Extend**: This library is designed for convenience. You can still use `System.Security.Cryptography` classes along with these extension methods.
+
+## Documentation
+
+See [API Doc](https://ronsun.github.io/MoreNet.Cryptography/api) for APIs.
