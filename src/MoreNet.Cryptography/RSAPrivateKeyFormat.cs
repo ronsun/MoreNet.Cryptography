@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 
 namespace MoreNet.Cryptography
 {
     /// <summary>
-    /// Format of public key for RSA.
+    /// Format of private key for RSA.
     /// </summary>
     [Flags]
-    public enum RSAPublicKeyForamt
+    public enum RSAPrivateKeyFormat
     {
         /// <summary>
         /// Unknown.
@@ -24,8 +24,8 @@ namespace MoreNet.Cryptography
         Pkcs1 = 2,
 
         /// <summary>
-        /// X.509 SubjectPublicKeyInfo structure after decryption (SPKI).
+        /// Pkcs8.
         /// </summary>
-        SubjectPublicKeyInfo = 4,
+        Pkcs8 = 4,
     }
 }

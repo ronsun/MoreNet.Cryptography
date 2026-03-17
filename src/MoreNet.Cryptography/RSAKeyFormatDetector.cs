@@ -1,4 +1,4 @@
-﻿using MoreNet.Foundation;
+using MoreNet.Foundation;
 using System;
 using System.Text.RegularExpressions;
 using System.Xml;
@@ -17,8 +17,8 @@ namespace MoreNet.Cryptography
         /// will throw exception or return unexpected result.
         /// </summary>
         /// <param name="privateKey">Valid private key.</param>
-        /// <returns>The private key foramt.</returns>
-        public static RSAPrivateKeyForamt DetectPrivateKeyFormat(string privateKey)
+        /// <returns>The private key format.</returns>
+        public static RSAPrivateKeyFormat DetectPrivateKeyFormat(string privateKey)
         {
             Argument.ShouldNotEmpty(privateKey, nameof(privateKey));
 
@@ -27,20 +27,20 @@ namespace MoreNet.Cryptography
                 switch (bytes[7])
                 {
                     case 0x30:
-                        return RSAPrivateKeyForamt.Pkcs8;
+                        return RSAPrivateKeyFormat.Pkcs8;
                     case 0x02:
-                        return RSAPrivateKeyForamt.Pkcs1;
+                        return RSAPrivateKeyFormat.Pkcs1;
                     default:
-                        return RSAPrivateKeyForamt.None;
+                        return RSAPrivateKeyFormat.None;
                 }
             }
 
             if (TryParseXml(privateKey, out var xDocument))
             {
-                return RSAPrivateKeyForamt.Xml;
+                return RSAPrivateKeyFormat.Xml;
             }
 
-            return RSAPrivateKeyForamt.None;
+            return RSAPrivateKeyFormat.None;
         }
 
         /// <summary>
@@ -49,8 +49,8 @@ namespace MoreNet.Cryptography
         /// will throw exception or return unexpected result.
         /// </summary>
         /// <param name="publicKey">Valid public key.</param>
-        /// <returns>The public key foramt.</returns>
-        public static RSAPublicKeyForamt DetectRSAPublicKeyForamt(string publicKey)
+        /// <returns>The public key format.</returns>
+        public static RSAPublicKeyFormat DetectRSAPublicKeyFormat(string publicKey)
         {
             Argument.ShouldNotEmpty(publicKey, nameof(publicKey));
 
@@ -80,21 +80,21 @@ namespace MoreNet.Cryptography
                     switch (bytes[dataIndex])
                     {
                         case 0x02:
-                            return RSAPublicKeyForamt.Pkcs1;
+                            return RSAPublicKeyFormat.Pkcs1;
                         case 0x30:
-                            return RSAPublicKeyForamt.SubjectPublicKeyInfo;
+                            return RSAPublicKeyFormat.SubjectPublicKeyInfo;
                         default:
-                            return RSAPublicKeyForamt.None;
+                            return RSAPublicKeyFormat.None;
                     }
                 }
             }
 
             if (TryParseXml(publicKey, out var xDocument))
             {
-                return RSAPublicKeyForamt.Xml;
+                return RSAPublicKeyFormat.Xml;
             }
 
-            return RSAPublicKeyForamt.None;
+            return RSAPublicKeyFormat.None;
         }
 
         private static bool TryParseXml(string text, out XDocument xDocument)

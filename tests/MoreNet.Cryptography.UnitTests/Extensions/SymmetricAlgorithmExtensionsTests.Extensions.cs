@@ -1,4 +1,4 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using NSubstitute;
 using NUnit.Framework;
 using System;
@@ -149,7 +149,7 @@ namespace MoreNet.Cryptography.Extensions.Tests
         [Test()]
         [TestCaseSource(nameof(DecryptFromBase64TestCaseSource_WithCiphertextAndPlaintextEncoding_InputNullArguments_ThrowExpectedException))]
         public void DecryptFromBase64Test_WithCiphertextAndPlaintextEncoding_InputNullArguments_ThrowExpectedException(
-            string stubCipertext,
+            string stubCiphertext,
             Encoding stubPlaintextEncoding
             )
         {
@@ -157,7 +157,7 @@ namespace MoreNet.Cryptography.Extensions.Tests
             var target = Substitute.For<SymmetricAlgorithm>();
 
             // act
-            Action action = () => target.DecryptFromBase64(stubCipertext, stubPlaintextEncoding);
+            Action action = () => target.DecryptFromBase64(stubCiphertext, stubPlaintextEncoding);
 
             // assert
             action.Should().ThrowExactly<ArgumentNullException>();
@@ -178,9 +178,9 @@ namespace MoreNet.Cryptography.Extensions.Tests
         }
 
         [Test()]
-        [TestCaseSource(nameof(DecryptTestCaseSource_WithCipertextBytesAndPlaintextEncoding_InputNullArguments_ThrowExpectedException))]
-        public void DecryptTest_WithCipertextBytesAndPlaintextEncoding_InputNullArguments_ThrowExpectedException(
-            byte[] stubCipertextBytes,
+        [TestCaseSource(nameof(DecryptTestCaseSource_WithCiphertextBytesAndPlaintextEncoding_InputNullArguments_ThrowExpectedException))]
+        public void DecryptTest_WithCiphertextBytesAndPlaintextEncoding_InputNullArguments_ThrowExpectedException(
+            byte[] stubCiphertextBytes,
             Encoding stubPlaintextEncoding
             )
         {
@@ -188,13 +188,13 @@ namespace MoreNet.Cryptography.Extensions.Tests
             var target = Substitute.For<SymmetricAlgorithm>();
 
             // act
-            Action action = () => target.Decrypt(stubCipertextBytes, stubPlaintextEncoding);
+            Action action = () => target.Decrypt(stubCiphertextBytes, stubPlaintextEncoding);
 
             // assert
             action.Should().ThrowExactly<ArgumentNullException>();
         }
 
-        public static IEnumerable DecryptTestCaseSource_WithCipertextBytesAndPlaintextEncoding_InputNullArguments_ThrowExpectedException()
+        public static IEnumerable DecryptTestCaseSource_WithCiphertextBytesAndPlaintextEncoding_InputNullArguments_ThrowExpectedException()
         {
             byte[] stubCiphertextBytes = null;
             Encoding stubPlaintextEncoding = null;

@@ -1,4 +1,4 @@
-﻿using MoreNet.Foundation;
+using MoreNet.Foundation;
 using System;
 using System.Security.Cryptography;
 using System.Text;
@@ -11,7 +11,7 @@ namespace MoreNet.Cryptography.Extensions
     public static class HashAlgorithmExtensions
     {
         /// <summary>
-        /// CompteHash and convert result to hex string without charactor '-'.
+        /// CompteHash and convert result to hex string without character '-'.
         /// </summary>
         /// <param name="hash">The instance of HashAlgorithm. </param>
         /// <param name="plaintext">Plaintext, usd UTF-8 as default encoding. </param>
@@ -22,7 +22,7 @@ namespace MoreNet.Cryptography.Extensions
         }
 
         /// <summary>
-        /// CompteHash and convert result to hex string without charactor '-'.
+        /// CompteHash and convert result to hex string without character '-'.
         /// </summary>
         /// <param name="hash">The instance of HashAlgorithm. </param>
         /// <param name="plaintext">Plaintext. </param>
@@ -38,7 +38,7 @@ namespace MoreNet.Cryptography.Extensions
         }
 
         /// <summary>
-        /// CompteHash and convert result to hex string without charactor '-'.
+        /// CompteHash and convert result to hex string without character '-'.
         /// </summary>
         /// <param name="hash">The instance of HashAlgorithm. </param>
         /// <param name="plaintextBytes">Plaintext in byte array. </param>

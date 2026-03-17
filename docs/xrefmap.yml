@@ -1343,22 +1343,22 @@ references:
   isSpec: "True"
   fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectPrivateKeyFormat
   nameWithType: RSAKeyFormatDetector.DetectPrivateKeyFormat
-- uid: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(System.String)
-  name: DetectRSAPublicKeyForamt(string)
-  href: api/MoreNet.Cryptography.RSAKeyFormatDetector.html#MoreNet_Cryptography_RSAKeyFormatDetector_DetectRSAPublicKeyForamt_System_String_
-  commentId: M:MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(System.String)
-  name.vb: DetectRSAPublicKeyForamt(String)
-  fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(string)
-  fullName.vb: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt(String)
-  nameWithType: RSAKeyFormatDetector.DetectRSAPublicKeyForamt(string)
-  nameWithType.vb: RSAKeyFormatDetector.DetectRSAPublicKeyForamt(String)
-- uid: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt*
-  name: DetectRSAPublicKeyForamt
-  href: api/MoreNet.Cryptography.RSAKeyFormatDetector.html#MoreNet_Cryptography_RSAKeyFormatDetector_DetectRSAPublicKeyForamt_
-  commentId: Overload:MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt
+- uid: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyFormat(System.String)
+  name: DetectRSAPublicKeyFormat(string)
+  href: api/MoreNet.Cryptography.RSAKeyFormatDetector.html#MoreNet_Cryptography_RSAKeyFormatDetector_DetectRSAPublicKeyFormat_System_String_
+  commentId: M:MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyFormat(System.String)
+  name.vb: DetectRSAPublicKeyFormat(String)
+  fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyFormat(string)
+  fullName.vb: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyFormat(String)
+  nameWithType: RSAKeyFormatDetector.DetectRSAPublicKeyFormat(string)
+  nameWithType.vb: RSAKeyFormatDetector.DetectRSAPublicKeyFormat(String)
+- uid: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyFormat*
+  name: DetectRSAPublicKeyFormat
+  href: api/MoreNet.Cryptography.RSAKeyFormatDetector.html#MoreNet_Cryptography_RSAKeyFormatDetector_DetectRSAPublicKeyFormat_
+  commentId: Overload:MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyFormat
   isSpec: "True"
-  fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyForamt
-  nameWithType: RSAKeyFormatDetector.DetectRSAPublicKeyForamt
+  fullName: MoreNet.Cryptography.RSAKeyFormatDetector.DetectRSAPublicKeyFormat
+  nameWithType: RSAKeyFormatDetector.DetectRSAPublicKeyFormat
 - uid: MoreNet.Cryptography.RSAPrivateKeyForamt
   name: RSAPrivateKeyForamt
   href: api/MoreNet.Cryptography.RSAPrivateKeyForamt.html
@@ -1389,6 +1389,36 @@ references:
   commentId: F:MoreNet.Cryptography.RSAPrivateKeyForamt.Xml
   fullName: MoreNet.Cryptography.RSAPrivateKeyForamt.Xml
   nameWithType: RSAPrivateKeyForamt.Xml
+- uid: MoreNet.Cryptography.RSAPrivateKeyFormat
+  name: RSAPrivateKeyFormat
+  href: api/MoreNet.Cryptography.RSAPrivateKeyFormat.html
+  commentId: T:MoreNet.Cryptography.RSAPrivateKeyFormat
+  fullName: MoreNet.Cryptography.RSAPrivateKeyFormat
+  nameWithType: RSAPrivateKeyFormat
+- uid: MoreNet.Cryptography.RSAPrivateKeyFormat.None
+  name: None
+  href: api/MoreNet.Cryptography.RSAPrivateKeyFormat.html#MoreNet_Cryptography_RSAPrivateKeyFormat_None
+  commentId: F:MoreNet.Cryptography.RSAPrivateKeyFormat.None
+  fullName: MoreNet.Cryptography.RSAPrivateKeyFormat.None
+  nameWithType: RSAPrivateKeyFormat.None
+- uid: MoreNet.Cryptography.RSAPrivateKeyFormat.Pkcs1
+  name: Pkcs1
+  href: api/MoreNet.Cryptography.RSAPrivateKeyFormat.html#MoreNet_Cryptography_RSAPrivateKeyFormat_Pkcs1
+  commentId: F:MoreNet.Cryptography.RSAPrivateKeyFormat.Pkcs1
+  fullName: MoreNet.Cryptography.RSAPrivateKeyFormat.Pkcs1
+  nameWithType: RSAPrivateKeyFormat.Pkcs1
+- uid: MoreNet.Cryptography.RSAPrivateKeyFormat.Pkcs8
+  name: Pkcs8
+  href: api/MoreNet.Cryptography.RSAPrivateKeyFormat.html#MoreNet_Cryptography_RSAPrivateKeyFormat_Pkcs8
+  commentId: F:MoreNet.Cryptography.RSAPrivateKeyFormat.Pkcs8
+  fullName: MoreNet.Cryptography.RSAPrivateKeyFormat.Pkcs8
+  nameWithType: RSAPrivateKeyFormat.Pkcs8
+- uid: MoreNet.Cryptography.RSAPrivateKeyFormat.Xml
+  name: Xml
+  href: api/MoreNet.Cryptography.RSAPrivateKeyFormat.html#MoreNet_Cryptography_RSAPrivateKeyFormat_Xml
+  commentId: F:MoreNet.Cryptography.RSAPrivateKeyFormat.Xml
+  fullName: MoreNet.Cryptography.RSAPrivateKeyFormat.Xml
+  nameWithType: RSAPrivateKeyFormat.Xml
 - uid: MoreNet.Cryptography.RSAPublicKeyForamt
   name: RSAPublicKeyForamt
   href: api/MoreNet.Cryptography.RSAPublicKeyForamt.html
@@ -1419,3 +1449,33 @@ references:
   commentId: F:MoreNet.Cryptography.RSAPublicKeyForamt.Xml
   fullName: MoreNet.Cryptography.RSAPublicKeyForamt.Xml
   nameWithType: RSAPublicKeyForamt.Xml
+- uid: MoreNet.Cryptography.RSAPublicKeyFormat
+  name: RSAPublicKeyFormat
+  href: api/MoreNet.Cryptography.RSAPublicKeyFormat.html
+  commentId: T:MoreNet.Cryptography.RSAPublicKeyFormat
+  fullName: MoreNet.Cryptography.RSAPublicKeyFormat
+  nameWithType: RSAPublicKeyFormat
+- uid: MoreNet.Cryptography.RSAPublicKeyFormat.None
+  name: None
+  href: api/MoreNet.Cryptography.RSAPublicKeyFormat.html#MoreNet_Cryptography_RSAPublicKeyFormat_None
+  commentId: F:MoreNet.Cryptography.RSAPublicKeyFormat.None
+  fullName: MoreNet.Cryptography.RSAPublicKeyFormat.None
+  nameWithType: RSAPublicKeyFormat.None
+- uid: MoreNet.Cryptography.RSAPublicKeyFormat.Pkcs1
+  name: Pkcs1
+  href: api/MoreNet.Cryptography.RSAPublicKeyFormat.html#MoreNet_Cryptography_RSAPublicKeyFormat_Pkcs1
+  commentId: F:MoreNet.Cryptography.RSAPublicKeyFormat.Pkcs1
+  fullName: MoreNet.Cryptography.RSAPublicKeyFormat.Pkcs1
+  nameWithType: RSAPublicKeyFormat.Pkcs1
+- uid: MoreNet.Cryptography.RSAPublicKeyFormat.SubjectPublicKeyInfo
+  name: SubjectPublicKeyInfo
+  href: api/MoreNet.Cryptography.RSAPublicKeyFormat.html#MoreNet_Cryptography_RSAPublicKeyFormat_SubjectPublicKeyInfo
+  commentId: F:MoreNet.Cryptography.RSAPublicKeyFormat.SubjectPublicKeyInfo
+  fullName: MoreNet.Cryptography.RSAPublicKeyFormat.SubjectPublicKeyInfo
+  nameWithType: RSAPublicKeyFormat.SubjectPublicKeyInfo
+- uid: MoreNet.Cryptography.RSAPublicKeyFormat.Xml
+  name: Xml
+  href: api/MoreNet.Cryptography.RSAPublicKeyFormat.html#MoreNet_Cryptography_RSAPublicKeyFormat_Xml
+  commentId: F:MoreNet.Cryptography.RSAPublicKeyFormat.Xml
+  fullName: MoreNet.Cryptography.RSAPublicKeyFormat.Xml
+  nameWithType: RSAPublicKeyFormat.Xml

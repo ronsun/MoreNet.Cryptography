@@ -1,4 +1,4 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using NSubstitute;
 using NUnit.Framework;
 using System;
@@ -42,7 +42,7 @@ namespace MoreNet.Cryptography.Tests
         }
 
         [Test()]
-        public void GetStringTest_InputNullDictioanry_ThrowExpectedException()
+        public void GetStringTest_InputNullDictionary_ThrowExpectedException()
         {
             // arrange
             int stubLength = 1;
@@ -58,7 +58,7 @@ namespace MoreNet.Cryptography.Tests
         }
 
         [Test()]
-        public void GetStringTest_InputEmptyDictioanry_ThrowExpectedException()
+        public void GetStringTest_InputEmptyDictionary_ThrowExpectedException()
         {
             // arrange
             int stubLength = 1;

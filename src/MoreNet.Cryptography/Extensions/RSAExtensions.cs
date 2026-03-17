@@ -1,4 +1,4 @@
-﻿using MoreNet.Foundation;
+using MoreNet.Foundation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -167,7 +167,7 @@ namespace MoreNet.Cryptography.Extensions
 #if NETSTANDARD2_1_OR_GREATER
 
         /// <summary>
-        /// Import private key with detected format <see cref="RSAPrivateKeyForamt"/>.
+        /// Import private key with detected format <see cref="RSAPrivateKeyFormat"/>.
         /// </summary>
         /// <param name="rsa"><see cref="RSA"/>.</param>
         /// <param name="privateKey">Valid private key.</param>
@@ -179,28 +179,28 @@ namespace MoreNet.Cryptography.Extensions
             var format = RSAKeyFormatDetector.DetectPrivateKeyFormat(privateKey);
             switch (format)
             {
-                case RSAPrivateKeyForamt.Xml:
+                case RSAPrivateKeyFormat.Xml:
                     rsa.FromXmlString(privateKey);
                     break;
 
-                case RSAPrivateKeyForamt.Pkcs1:
+                case RSAPrivateKeyFormat.Pkcs1:
                     var pcks1Bytes = Convert.FromBase64String(privateKey);
                     rsa.ImportRSAPrivateKey(pcks1Bytes, out int _);
                     break;
 
-                case RSAPrivateKeyForamt.Pkcs8:
+                case RSAPrivateKeyFormat.Pkcs8:
                     var pcks8Bytes = Convert.FromBase64String(privateKey);
                     rsa.ImportPkcs8PrivateKey(pcks8Bytes, out int _);
                     break;
 
-                case RSAPrivateKeyForamt.None:
+                case RSAPrivateKeyFormat.None:
                 default:
                     throw new ArgumentException("Unknown format of private key");
             }
         }
 
         /// <summary>
-        /// Import public key with detected format <see cref="RSAPublicKeyForamt"/>.
+        /// Import public key with detected format <see cref="RSAPublicKeyFormat"/>.
         /// </summary>
         /// <param name="rsa"><see cref="RSA"/>.</param>
         /// <param name="publicKey">Valid public key.</param>
@@ -209,24 +209,24 @@ namespace MoreNet.Cryptography.Extensions
             Argument.ShouldNotNull(rsa, nameof(rsa));
             Argument.ShouldNotEmpty(publicKey, nameof(publicKey));
 
-            var format = RSAKeyFormatDetector.DetectRSAPublicKeyForamt(publicKey);
+            var format = RSAKeyFormatDetector.DetectRSAPublicKeyFormat(publicKey);
             switch (format)
             {
-                case RSAPublicKeyForamt.Xml:
+                case RSAPublicKeyFormat.Xml:
                     rsa.FromXmlString(publicKey);
                     break;
 
-                case RSAPublicKeyForamt.Pkcs1:
+                case RSAPublicKeyFormat.Pkcs1:
                     var pcks1Bytes = Convert.FromBase64String(publicKey);
                     rsa.ImportRSAPublicKey(pcks1Bytes, out int _);
                     break;
 
-                case RSAPublicKeyForamt.SubjectPublicKeyInfo:
+                case RSAPublicKeyFormat.SubjectPublicKeyInfo:
                     var pcks8Bytes = Convert.FromBase64String(publicKey);
                     rsa.ImportSubjectPublicKeyInfo(pcks8Bytes, out int _);
                     break;
 
-                case RSAPublicKeyForamt.None:
+                case RSAPublicKeyFormat.None:
                 default:
                     throw new ArgumentException("Unknown format of public key");
             }

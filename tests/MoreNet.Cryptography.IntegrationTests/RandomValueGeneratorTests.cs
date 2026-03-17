@@ -1,4 +1,4 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using NUnit.Framework;
 using System.Security.Cryptography;
 
@@ -48,13 +48,13 @@ namespace MoreNet.Cryptography.IntegrationTests
         [TestCase(3, "a", "aaa")]
         // text element
         [TestCase(1, "\u0061\u031B", "\u0061\u031B")]
-        public void GetStringTest_ReturnsExpectedString(int stubLengh, string stubDictionary, string expected)
+        public void GetStringTest_ReturnsExpectedString(int stubLength, string stubDictionary, string expected)
         {
             // arrange
             var target = new RandomValueGenerator(RandomNumberGenerator.Create());
 
             // act
-            var actual = target.GetString(stubLengh, stubDictionary);
+            var actual = target.GetString(stubLength, stubDictionary);
 
             // assert
             actual.Should().Be(expected);

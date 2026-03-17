@@ -1,4 +1,4 @@
-﻿namespace MoreNet.Cryptography
+namespace MoreNet.Cryptography
 {
     /// <summary>
     /// Random value generator.
@@ -45,7 +45,7 @@
         /// One exception is while <paramref name="min"/> is equals to <paramref name="max"/>, returns <paramref name="min"/>.
         /// </summary>
         /// <param name="min">Minimum value of range, default: 0.</param>
-        /// <param name="max">Maximun valud of range, defalut: int.MaxValue. </param>
+        /// <param name="max">Maximum value of range, default: int.MaxValue. </param>
         /// <returns>Random int.</returns>
         int GetInt(int min, int max);
     }
